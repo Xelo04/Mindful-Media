@@ -1,10 +1,11 @@
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import About from "./pages/about/About";
 import Contact from "./pages/contact/Contact";
 import Home from "./pages/home/Home";
-import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import OurStories from "./pages/our-stories/OurStories";
 import YourStory from "./pages/your-story/YourStory";
 import Navbar from "./components/navbar/Navbar";
+import Footer from "./components/footer/Footer";
 
 function App() {
   const Layout = () => {
@@ -14,7 +15,7 @@ function App() {
         <div className="contentContainer">
           <Outlet />
         </div>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     );
   };
