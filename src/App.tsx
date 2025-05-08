@@ -1,7 +1,6 @@
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import About from "./pages/about/About";
 import Contact from "./pages/contact/Contact";
-import Home from "./pages/home/Home";
 import OurStories from "./pages/our-stories/OurStories";
 import YourStory from "./pages/your-story/YourStory";
 import Navbar from "./components/navbar/Navbar";
@@ -27,10 +26,6 @@ function App() {
       children: [
         {
           path: "/",
-          element: <Home />,
-        },
-        {
-          path: "/about",
           element: <About />,
         },
         {
