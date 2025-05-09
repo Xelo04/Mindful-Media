@@ -1,3 +1,1 @@
-aaaaaaaaa# Mindful-Media
-aaaa
-a
+# Mindful-Media
