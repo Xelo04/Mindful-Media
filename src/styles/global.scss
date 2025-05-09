@@ -1,3 +1,5 @@
+@use "./variables.scss" as constants;
+
 * {
   margin: 0;
   padding: 0;
@@ -7,4 +9,15 @@
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.main {
+  font-family: "Inter", sans-serif;
+  background-color: constants.$main-bg;
+  color: constants.$black-color;
+}
+
+.contentContainer {
+  padding: 5px 20px;
+  width: 100%;
 }

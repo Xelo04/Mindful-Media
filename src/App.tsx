@@ -5,6 +5,7 @@ import OurStories from "./pages/our-stories/OurStories";
 import YourStory from "./pages/your-story/YourStory";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
+import "./styles/global.scss";
 
 function App() {
   const Layout = () => {
