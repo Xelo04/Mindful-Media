@@ -28,6 +28,13 @@
           font-size: 1.2rem;
         }
       }
+      // Highlight the active list item for "your-story"
+      .your-story {
+        background-color: constants.$middle-bg;
+        border-radius: 25px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border: 2px solid black;
+      }
     }
   }
 }

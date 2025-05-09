@@ -19,9 +19,15 @@ const Navbar = () => {
   return (
     <div className="navbar-container">
       <nav>
-        <ul className="list">
+        <ul>
           {navbarData.map((item) => (
-            <li key={item.id}>
+            <li
+              key={item.id}
+              // Add className to SHARE YOUR STORY link to match design
+              className={
+                item.navigationTitle === "SHARE YOUR STORY" ? "your-story" : ""
+              }
+            >
               <Link to={item.url}>
                 <span>{item.navigationTitle}</span>
               </Link>
