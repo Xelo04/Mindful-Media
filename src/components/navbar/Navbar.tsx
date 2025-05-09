@@ -1,22 +1,26 @@
+// Dynamic Navbar component using React Router to display the current page title
+// It also uses a navigationBarData array from data.ts to generate the links in the navbar
+// navigationBarData = [{id, navigationTitle, url, pageTitle}]
+
 import "./navbar.scss";
 import { Link, useLocation } from "react-router-dom";
-import { navigationBar } from "../../data";
+import { navigationBarData } from "../../data";
 
 const Navbar = () => {
   const location = useLocation();
 
   const getPageTitle = () => {
-    const currentPage = navigationBar.find(
+    const currentPage = navigationBarData.find(
       (item) => item.url === location.pathname
     );
-    return currentPage ? currentPage.title : "Couldn't find the page";
+    return currentPage ? currentPage.pageTitle : "Couldn't find the page";
   };
 
   return (
     <div>
       <nav className="navbar">
         <ul className="navbar-links">
-          {navigationBar.map((item) => (
+          {navigationBarData.map((item) => (
             <li key={item.id}>
               <Link to={item.url}>
                 <span>{item.navigationTitle}</span>
