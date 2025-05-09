@@ -9,7 +9,7 @@ export const navbarData = [
     id: 2,
     navigationTitle: "OUR STORIES",
     url: "/our-stories",
-    pageTitle: "Explore Our Stories",
+    pageTitle: "OUR STORIES",
   },
   {
     id: 3,

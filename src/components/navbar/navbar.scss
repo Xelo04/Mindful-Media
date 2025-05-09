@@ -15,26 +15,41 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
-      padding: 0;
+      padding-left: 10px;
+      padding-right: 30px;
       margin: 0;
-
-      li {
+      .links {
         display: flex;
+        justify-content: space-around;
         align-items: center;
-        justify-content: center;
-        padding: 10px 20px;
-        cursor: pointer;
-        span {
-          font-size: 1.2rem;
+        width: 100%;
+        li {
+          padding: 10px 20px;
+          cursor: pointer;
+          span {
+            font-size: 1.2rem;
+          }
+        }
+        // Highlight the active list item for "your-story"
+        .your-story {
+          background-color: constants.$middle-bg;
+          border-radius: 25px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          border: 2px solid black;
         }
       }
-      // Highlight the active list item for "your-story"
-      .your-story {
-        background-color: constants.$middle-bg;
-        border-radius: 25px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        border: 2px solid black;
+      li {
+        img {
+          width: 36px;
+          height: 36px;
+        }
       }
     }
+  }
+  .page-title {
+    font-size: 4.5rem;
+    font-weight: 250;
+    margin: 0;
+    padding-left: 50px;
   }
 }

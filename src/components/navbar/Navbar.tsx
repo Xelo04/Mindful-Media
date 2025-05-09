@@ -20,19 +20,23 @@ const Navbar = () => {
     <div className="navbar-container">
       <nav>
         <ul>
-          {navbarData.map((item) => (
-            <li
-              key={item.id}
-              // Add className to SHARE YOUR STORY link to match design
-              className={
-                item.navigationTitle === "SHARE YOUR STORY" ? "your-story" : ""
-              }
-            >
+          <div className="links">
+            {navbarData.map((item) => (
               <Link to={item.url}>
-                <span>{item.navigationTitle}</span>
+                <li
+                  key={item.id}
+                  // Add className to SHARE YOUR STORY link to match design
+                  className={
+                    item.navigationTitle === "SHARE YOUR STORY"
+                      ? "your-story"
+                      : ""
+                  }
+                >
+                  <span>{item.navigationTitle}</span>
+                </li>
               </Link>
-            </li>
-          ))}
+            ))}
+          </div>
           <li>
             <img src="translate.svg" alt="Translate" />
           </li>
