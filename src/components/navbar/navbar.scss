@@ -23,11 +23,50 @@
         justify-content: space-around;
         align-items: center;
         width: 100%;
+        // li {
+        //   padding: 10px 20px;
+        //   cursor: pointer;
+        //   span {
+        //     font-size: 1.2rem;
+        //   }
+        // }
+        // li:hover {
+        //   border-radius: 25px;
+        //   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        //   border: 2px solid black;
+        //   transform: translateY(-3px);
+        //   transition: transform 0.2s ease, box-shadow 0.2s ease;
+        // }
         li {
+          position: relative; /* Required for the pseudo-element */
           padding: 10px 20px;
           cursor: pointer;
           span {
             font-size: 1.2rem;
+            transition: color 0.3s ease; /* Smooth color transition */
+          }
+
+          &:hover {
+            span {
+              color: constants.$soft-bg; /* Change text color on hover */
+            }
+
+            &::after {
+              transform: scaleX(1); /* Fully expand the underline */
+            }
+          }
+
+          &::after {
+            content: "";
+            position: absolute;
+            left: 10%; /* Start from the middle */
+            bottom: 12px;
+            width: 80%;
+            height: 2px;
+            background-color: constants.$soft-bg; /* Underline color */
+            transform: scaleX(0); /* Start with no underline */
+            transform-origin: center; /* Expand from the center */
+            transition: transform 0.3s ease; /* Smooth underline animation */
           }
         }
         // Highlight the active list item for "your-story"
