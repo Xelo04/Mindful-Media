@@ -9,7 +9,7 @@
   color: constants.$white-color;
   width: 100%;
   nav {
-    padding: 20px;
+    padding: 20px 20px 0 20px;
     ul {
       list-style: none;
       display: flex;
@@ -47,9 +47,10 @@
     }
   }
   .page-title {
-    font-size: 4.5rem;
+    font-size: 4.8rem;
     font-weight: 250;
     margin: 0;
     padding-left: 50px;
+    letter-spacing: 5px;
   }
 }
