@@ -29,7 +29,7 @@ const Navbar = () => {
                   className={
                     item.navigationTitle === "SHARE YOUR STORY"
                       ? "your-story"
-                      : ""
+                      : "other-link"
                   }
                 >
                   <span>{item.navigationTitle}</span>

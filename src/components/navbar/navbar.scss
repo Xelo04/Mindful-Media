@@ -8,8 +8,10 @@
   );
   color: constants.$white-color;
   width: 100%;
+
   nav {
     padding: 20px 20px 0 20px;
+
     ul {
       list-style: none;
       display: flex;
@@ -18,65 +20,67 @@
       padding-left: 10px;
       padding-right: 30px;
       margin: 0;
+
       .links {
         display: flex;
         justify-content: space-around;
         align-items: center;
         width: 100%;
-        // li {
-        //   padding: 10px 20px;
-        //   cursor: pointer;
-        //   span {
-        //     font-size: 1.2rem;
-        //   }
-        // }
-        // li:hover {
-        //   border-radius: 25px;
-        //   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        //   border: 2px solid black;
-        //   transform: translateY(-3px);
-        //   transition: transform 0.2s ease, box-shadow 0.2s ease;
-        // }
-        li {
-          position: relative; /* Required for the pseudo-element */
+
+        li.other-link {
+          position: relative;
           padding: 10px 20px;
           cursor: pointer;
           span {
             font-size: 1.2rem;
-            transition: color 0.3s ease; /* Smooth color transition */
+            transition: color 0.3s ease;
           }
 
           &:hover {
             span {
-              color: constants.$soft-bg; /* Change text color on hover */
+              color: constants.$soft-bg;
             }
 
             &::after {
-              transform: scaleX(1); /* Fully expand the underline */
+              transform: scaleX(1);
             }
           }
 
           &::after {
             content: "";
             position: absolute;
-            left: 10%; /* Start from the middle */
+            left: 10%;
             bottom: 12px;
             width: 80%;
             height: 2px;
-            background-color: constants.$soft-bg; /* Underline color */
-            transform: scaleX(0); /* Start with no underline */
-            transform-origin: center; /* Expand from the center */
-            transition: transform 0.3s ease; /* Smooth underline animation */
+            background-color: constants.$soft-bg;
+            transform: scaleX(0);
+            transform-origin: center;
+            transition: transform 0.3s ease;
           }
         }
         // Highlight the active list item for "your-story"
-        .your-story {
+        li.your-story {
+          padding: 10px 20px;
+          cursor: pointer;
           background-color: constants.$middle-bg;
           border-radius: 25px;
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
           border: 2px solid black;
+          span {
+            font-size: 1.2rem;
+          }
+        }
+
+        li.your-story:hover {
+          border-radius: 25px;
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+          border: 2px solid black;
+          transform: translateY(-3px);
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
       }
+
       li {
         img {
           width: 36px;
