@@ -1,5 +1,5 @@
 @use "./variables.scss" as constants;
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   margin: 0;
@@ -13,7 +13,7 @@ a {
 }
 
 .main {
-  font-family: "Cinzel", serif;
+  font-family: "Roboto", serif;
   background-color: constants.$main-bg;
   color: constants.$black-color;
 }
