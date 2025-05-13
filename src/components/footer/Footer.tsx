@@ -1,7 +1,13 @@
 import "./footer.scss";
+import { footerData } from "../../data";
 
 const Footer = () => {
-  return <div className="footer">Footer</div>;
+  return (
+    <footer>
+      <img src="logo.png" alt="logo" />
+      <span>{footerData.author}</span>
+    </footer>
+  );
 };
 
 export default Footer;

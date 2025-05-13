@@ -20,3 +20,7 @@ export const navbarData = [
     url: "/your-story",
   },
 ];
+
+export const footerData = {
+  author: "© MINDFULLMEDIA",
+};

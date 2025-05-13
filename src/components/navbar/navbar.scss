@@ -1,6 +1,6 @@
 @use "../../styles/variables.scss" as constants;
 
-.navbar-container {
+nav {
   background: linear-gradient(
     to bottom,
     constants.$dark-bg,
@@ -8,92 +8,82 @@
   );
   color: constants.$white-color;
   width: 100%;
+  padding: 20px;
 
-  nav {
-    padding: 20px;
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 30px;
+    margin: 0;
 
-    ul {
-      list-style: none;
+    .links {
       display: flex;
       justify-content: space-around;
       align-items: center;
-      padding-left: 10px;
-      padding-right: 30px;
-      margin: 0;
+      width: 100%;
 
-      .links {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
+      li.other-link {
+        position: relative;
+        padding: 10px 20px;
+        cursor: pointer;
+        span {
+          font-size: 1.2rem;
+          transition: color 0.3s ease;
+        }
 
-        li.other-link {
-          position: relative;
-          padding: 10px 20px;
-          cursor: pointer;
+        &:hover {
           span {
-            font-size: 1.2rem;
-            transition: color 0.3s ease;
-          }
-
-          &:hover {
-            span {
-              color: constants.$soft-bg;
-            }
-
-            &::after {
-              transform: scaleX(1);
-            }
+            color: constants.$soft-bg;
           }
 
           &::after {
-            content: "";
-            position: absolute;
-            left: 10%;
-            bottom: 12px;
-            width: 80%;
-            height: 2px;
-            background-color: constants.$soft-bg;
-            transform: scaleX(0);
-            transform-origin: center;
-            transition: transform 0.3s ease;
-          }
-        }
-        // Highlight the active list item for "your-story"
-        li.your-story {
-          padding: 10px 20px;
-          cursor: pointer;
-          background-color: constants.$middle-bg;
-          border-radius: 25px;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-          border: 2px solid black;
-          span {
-            font-size: 1.2rem;
+            transform: scaleX(1);
           }
         }
 
-        li.your-story:hover {
-          border-radius: 25px;
-          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-          border: 2px solid black;
-          transform: translateY(-3px);
-          transition: transform 0.2s ease, box-shadow 0.2s ease;
+        &::after {
+          content: "";
+          position: absolute;
+          left: 10%;
+          bottom: 12px;
+          width: 80%;
+          height: 2px;
+          background-color: constants.$soft-bg;
+          transform: scaleX(0);
+          transform-origin: center;
+          transition: transform 0.3s ease;
+        }
+      }
+      // Highlight the active list item for "your-story"
+      li.your-story {
+        padding: 10px 20px;
+        cursor: pointer;
+        background-color: constants.$middle-bg;
+        border-radius: 25px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border: 2px solid black;
+        span {
+          font-size: 1.2rem;
         }
       }
 
-      li {
-        img {
-          width: 36px;
-          height: 36px;
-        }
+      li.your-story:hover {
+        border-radius: 25px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        border: 2px solid black;
+        transform: translateY(-3px);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
       }
     }
-  }
-  .page-title {
-    font-size: 4.8rem;
-    font-weight: 250;
-    margin: 0;
-    padding-left: 50px;
-    letter-spacing: 5px;
+
+    li {
+      img {
+        width: 36px;
+        height: 36px;
+      }
+    }
   }
 }

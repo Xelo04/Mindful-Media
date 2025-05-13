@@ -8,32 +8,30 @@ import { navbarData } from "../../data";
 
 const Navbar = () => {
   return (
-    <div className="navbar-container">
-      <nav>
-        <ul>
-          <div className="links">
-            {navbarData.map((item) => (
-              <Link to={item.url}>
-                <li
-                  key={item.id}
-                  // Add className to SHARE YOUR STORY link to match design
-                  className={
-                    item.navigationTitle === "SHARE YOUR STORY"
-                      ? "your-story"
-                      : "other-link"
-                  }
-                >
-                  <span>{item.navigationTitle}</span>
-                </li>
-              </Link>
-            ))}
-          </div>
-          <li>
-            <img src="translate.svg" alt="Translate" />
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <nav>
+      <ul>
+        <div className="links">
+          {navbarData.map((item) => (
+            <Link to={item.url}>
+              <li
+                key={item.id}
+                // Add className to SHARE YOUR STORY link to match design
+                className={
+                  item.navigationTitle === "SHARE YOUR STORY"
+                    ? "your-story"
+                    : "other-link"
+                }
+              >
+                <span>{item.navigationTitle}</span>
+              </li>
+            </Link>
+          ))}
+        </div>
+        <li>
+          <img src="translate.svg" alt="Translate" />
+        </li>
+      </ul>
+    </nav>
   );
 };
 
