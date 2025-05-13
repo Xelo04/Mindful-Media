@@ -1,3 +1,9 @@
+// TeamMemberSlider component is using teamMembers array from data.ts to render
+// a slider of team members. The component uses useState to manage the current index of the displayed team member.
+// The component renders the current team member's image, name, surname, and description.
+// The component also includes left and right arrow buttons to navigate through the team members (arrows are svg files).
+// teamMembers = [{id, name, surname, image, description}]
+
 import "./teamMemberSlider.scss";
 import { useState } from "react";
 import { teamMembers } from "../../data";
