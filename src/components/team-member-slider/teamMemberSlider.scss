@@ -5,17 +5,23 @@
   align-items: center;
   padding-inline: 0px;
   padding-block: 40px;
+  width: 100%;
   button {
+    width: 13%;
     background-color: transparent;
     border: none;
     cursor: pointer;
   }
   .team-member-image {
-    width: 50%;
+    width: 34%;
     height: auto;
     border-radius: 50%;
+    border: 2px solid #9a3367;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   }
   .team-member-info {
+    width: 40%;
     padding-left: 30px;
     text-align: justify;
   }
