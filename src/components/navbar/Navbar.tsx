@@ -3,19 +3,10 @@
 // navbarData = [{id, navigationTitle, url, pageTitle}]
 
 import "./navbar.scss";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { navbarData } from "../../data";
 
 const Navbar = () => {
-  const location = useLocation();
-
-  const getPageTitle = () => {
-    const currentPage = navbarData.find(
-      (item) => item.url === location.pathname
-    );
-    return currentPage ? currentPage.pageTitle : "Couldn't find the page";
-  };
-
   return (
     <div className="navbar-container">
       <nav>
@@ -42,7 +33,6 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
-      <div className="page-title">{getPageTitle()}</div>
     </div>
   );
 };

@@ -1,0 +1,11 @@
+.star {
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  transform: scale(1);
+  opacity: 1;
+}
+
+.star.pop {
+  filter: invert(100%) brightness(100%) contrast(100%);
+  transform: scale(1.6);
+  opacity: 0;
+}
