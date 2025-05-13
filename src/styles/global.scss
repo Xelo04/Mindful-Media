@@ -22,8 +22,10 @@ a {
   width: 100%;
 }
 
-h1 {
+h2 {
   font-size: 3rem;
   font-weight: 300;
   color: constants.$black-color;
+  padding-left: 30px;
+  border-bottom: 2px solid constants.$black-color;
 }

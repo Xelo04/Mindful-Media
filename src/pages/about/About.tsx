@@ -1,3 +1,4 @@
+import TeamMemberSlider from "../../components/team-member-slider/TeamMemberSlider";
 import "./about.scss";
 
 const About = () => {
@@ -10,7 +11,7 @@ const About = () => {
         </div>
       </section>
       <section className="about-us">
-        <h1>ABOUT US</h1>
+        <h2>ABOUT US</h2>
         <div className="about-us-container">
           <div className="description">
             <span>SHORT PROJECT SUMMARY</span>
@@ -25,6 +26,7 @@ const About = () => {
           <img src="logo.png" alt="logo" />
         </div>
       </section>
+
       <section className="project-description">
         <div className="title">
           <span>THEORY SURROUNDING THE PROJECT FROM CASTRO</span>
@@ -63,6 +65,11 @@ const About = () => {
             Cras faucibus condimentum odio. Sed ac ligula. Aliquam at eros.
           </p>
         </div>
+      </section>
+
+      <section className="meet-us">
+        <h2>MEET US</h2>
+        <TeamMemberSlider />
       </section>
     </div>
   );
