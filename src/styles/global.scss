@@ -19,6 +19,11 @@ a {
 }
 
 .contentContainer {
-  padding: 5px 20px;
   width: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  color: constants.$black-color;
 }

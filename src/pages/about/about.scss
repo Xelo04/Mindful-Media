@@ -1,2 +1,24 @@
+@use "../../styles/variables.scss" as constants;
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+
 .about {
+  width: 100%;
+  .title-container {
+    background: linear-gradient(
+      to bottom,
+      constants.$middle-bg,
+      constants.$soft-bg,
+      constants.$main-bg
+    );
+    .title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: "Dancing Script", cursive;
+      font-size: 8rem;
+      color: constants.$white-color;
+      padding-bottom: 70px;
+    }
+  }
 }
