@@ -1,4 +1,4 @@
-import "./teammemberslider.scss";
+import "./teamMemberSlider.scss";
 import { useState } from "react";
 import { teamMembers } from "../../data";
 
@@ -17,18 +17,18 @@ const TeamMemberSlider = () => {
     );
   };
   return (
-    <div className="teammemberslider">
+    <div className="team-member-slider">
       <button className="arrow-left" onClick={handlePrev}>
         <img src="arrow_left.svg" alt="Previous" />
       </button>
+      <img
+        src={teamMembers[currentIndex].image}
+        alt={`${teamMembers[currentIndex].name} ${teamMembers[currentIndex].surname}`}
+      />
       <div className="team-member">
-        <img
-          src={teamMembers[currentIndex].image}
-          alt={`${teamMembers[currentIndex].name} ${teamMembers[currentIndex].surname}`}
-        />
-        <h3>
+        <span>
           {teamMembers[currentIndex].name} {teamMembers[currentIndex].surname}
-        </h3>
+        </span>
         <p>{teamMembers[currentIndex].description}</p>
       </div>
       <button className="arrow-right" onClick={handleNext}>
