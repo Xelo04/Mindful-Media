@@ -22,5 +22,5 @@ export const navbarData = [
 ];
 
 export const footerData = {
-  author: "© MINDFULLMEDIA",
+  author: "MINDFULLMEDIA",
 };

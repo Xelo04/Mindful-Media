@@ -1,11 +1,17 @@
+// Dynamic Footer component using footerData object from data.ts to generate the author name
+// footerData = {author}
+
 import "./footer.scss";
 import { footerData } from "../../data";
 
 const Footer = () => {
   return (
     <footer>
-      <img src="logo.png" alt="logo" />
-      <span>{footerData.author}</span>
+      <div className="logo">
+        <img src="footer_logo.png" alt="logo" />
+        <span>#{footerData.author}</span>
+      </div>
+      <span>© {footerData.author}</span>
     </footer>
   );
 };

@@ -1,2 +1,24 @@
-.footer {
+@use "../../styles/variables.scss" as constants;
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-block: 20px;
+  width: 100%;
+  color: constants.$white-color;
+  background: linear-gradient(
+    to bottom,
+    constants.$soft-bg,
+    constants.$dark-bg
+  );
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      width: 200px;
+      height: auto;
+    }
+  }
 }
