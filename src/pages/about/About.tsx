@@ -10,11 +10,12 @@ const About = () => {
           <span>Media</span>
         </div>
       </section>
+
       <section className="about-us">
         <h2>ABOUT US</h2>
         <div className="about-us-container">
           <div className="description">
-            <span>SHORT PROJECT SUMMARY</span>
+            <h3>SHORT PROJECT SUMMARY</h3>
             <p>
               We are a team of passionate individuals dedicated to creating
               meaningful and impactful media content. Our mission is to inspire,
@@ -28,9 +29,7 @@ const About = () => {
       </section>
 
       <section className="project-description">
-        <div className="title">
-          <span>THEORY SURROUNDING THE PROJECT FROM CASTRO</span>
-        </div>
+        <h3>THEORY SURROUNDING THE PROJECT FROM CASTRO</h3>
         <div className="description">
           <p>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas

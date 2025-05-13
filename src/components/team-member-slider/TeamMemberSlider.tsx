@@ -22,13 +22,14 @@ const TeamMemberSlider = () => {
         <img src="arrow_left.svg" alt="Previous" />
       </button>
       <img
+        className="team-member-image"
         src={teamMembers[currentIndex].image}
         alt={`${teamMembers[currentIndex].name} ${teamMembers[currentIndex].surname}`}
       />
-      <div className="team-member">
-        <span>
+      <div className="team-member-info">
+        <h3>
           {teamMembers[currentIndex].name} {teamMembers[currentIndex].surname}
-        </span>
+        </h3>
         <p>{teamMembers[currentIndex].description}</p>
       </div>
       <button className="arrow-right" onClick={handleNext}>
