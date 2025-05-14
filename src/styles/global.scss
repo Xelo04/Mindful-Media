@@ -22,6 +22,19 @@ a {
   width: 100%;
 }
 
+h1 {
+  padding-left: 40px;
+  padding-bottom: 30px;
+  font-size: 5rem;
+  font-weight: 300;
+  color: constants.$white-color;
+  background: linear-gradient(
+    to bottom,
+    constants.$dark-middle-bg,
+    constants.$soft-bg
+  );
+}
+
 h2 {
   font-size: 3rem;
   font-weight: 300;

@@ -4,11 +4,11 @@ nav {
   background: linear-gradient(
     to bottom,
     constants.$dark-bg,
-    constants.$middle-bg
+    constants.$dark-middle-bg
   );
   color: constants.$white-color;
   width: 100%;
-  padding: 20px;
+  padding: 20px 20px 0px 20px;
 
   ul {
     list-style: none;
