@@ -12,13 +12,23 @@ a {
   color: inherit;
 }
 
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
   font-family: "Roboto", serif;
   background-color: constants.$main-bg;
   color: constants.$black-color;
 }
 
 .contentContainer {
+  flex: 1;
   width: 100%;
 }
 
