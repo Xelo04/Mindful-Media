@@ -126,7 +126,7 @@ const FilteredStories = ({
           onClick={() => handlePageChange(currentPage - 1)}
           disabled={currentPage === 1}
         >
-          <img src="arrow_left.svg" alt="Previous Page" />
+          <span className="material-icons">arrow_left</span>
         </button>
         <div className="pages-numeration">
           <span>PAGE</span>
