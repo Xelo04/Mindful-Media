@@ -1,33 +1,35 @@
+// The Filters component is a reusable filter container that dynamically renders multiple filter dropdowns
+// using Filter component based on the selectOptions prop. It manages the selected filter values and notifies
+// the parent component of any changes via the onFiltersChange callback.
+// Props are: selectOptions - an object where keys are filter names and values are arrays of options - example: const options = [{ value: "chocolate", label: "Chocolate" }]
+// onFiltersChange - a callback function to handle the selected options
+
 import { useState } from "react";
 import Filter from "./filter/Filter";
 import "./filters.scss";
 
-// Props for Filters
 interface FiltersProps {
   selectOptions: {
-    [key: string]: { value: string; label: string }[]; // Dynamic keys for filters
+    [key: string]: { value: string; label: string }[];
   };
-  onFiltersChange: (filters: Record<string, any>) => void; // Callback to pass selected filters to the parent
+  onFiltersChange: (filters: Record<string, any>) => void;
 }
 
 const Filters = ({ selectOptions, onFiltersChange }: FiltersProps) => {
-  // State to manage selected options for all filters
   const [selectedFilters, setSelectedFilters] = useState<Record<string, any>>(
     Object.keys(selectOptions).reduce((acc, key) => {
-      acc[key] = null; // Initialize each filter's state as null
+      acc[key] = null;
       return acc;
     }, {} as Record<string, any>)
   );
 
-  // Generic handler for filter changes
   const handleFilterChange = (filterKey: string, selected: any) => {
     const updatedFilters = {
       ...selectedFilters,
-      [filterKey]: selected, // Update the state for the specific filter
+      [filterKey]: selected,
     };
     setSelectedFilters(updatedFilters);
 
-    // Notify the parent about the updated filters
     onFiltersChange(updatedFilters);
   };
 

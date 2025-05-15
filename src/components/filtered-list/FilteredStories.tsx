@@ -37,21 +37,19 @@ const FilteredStories = ({
     longDescription: null,
   });
 
-  const [currentPage, setCurrentPage] = useState(1); // State to track the current page
+  const [currentPage, setCurrentPage] = useState(1);
 
-  // Handle filter changes from the Filters component
   const handleFiltersChange = (updatedFilters: Record<keyof Story, any>) => {
     setFilters(updatedFilters);
-    setCurrentPage(1); // Reset to the first page when filters change
+    setCurrentPage(1);
   };
 
   // Filter stories based on active filters
   const filteredStories = useMemo(() => {
     return storiesData.filter((story) =>
       Object.entries(filters).every(([key, value]) => {
-        if (!value || value.length === 0) return true; // Skip if no filter is applied for this key
+        if (!value || value.length === 0) return true;
         if (Array.isArray(value)) {
-          // Handle multi-select filters
           return value.some(
             (filterValue) => story[key as keyof Story] === filterValue.value
           );
@@ -71,7 +69,6 @@ const FilteredStories = ({
   // Calculate the total number of pages
   const totalPages = Math.ceil(filteredStories.length / storiesPerPage);
 
-  // Handle page change
   const handlePageChange = (page: number) => {
     if (page >= 1 && page <= totalPages) {
       setCurrentPage(page);
@@ -80,12 +77,10 @@ const FilteredStories = ({
 
   return (
     <div className="filteredlist">
-      <span>---</span>
       <Filters
         selectOptions={selectOptions}
         onFiltersChange={handleFiltersChange}
       />
-      <span>---</span>
       <div className="stories-list">
         <h2>Stories:</h2>
         {paginatedStories.map((story) => (
@@ -101,6 +96,7 @@ const FilteredStories = ({
           </div>
         ))}
       </div>
+
       {/* Pagination Controls */}
       <div className="pagination">
         <button

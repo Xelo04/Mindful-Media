@@ -16,7 +16,6 @@ interface Option {
   label: string;
 }
 
-// Props for the Filter component
 interface FilterProps {
   options: Option[];
   onSelectionChange: (selectedOptions: Option[] | null) => void;
