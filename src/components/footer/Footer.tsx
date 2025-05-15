@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="logo">
-        <img src="footer_logo.png" alt="logo" />
+        <img src="logo-icon.png" alt="logo" />
         <span>#{footerData.author}</span>
       </div>
       <span>© {footerData.author}</span>
