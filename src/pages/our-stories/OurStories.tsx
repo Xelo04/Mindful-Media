@@ -1,10 +1,10 @@
 import FilteredList from "../../components/filtered-list/FilteredList";
 import "./ourStories.scss";
 
-const data = [
+const storiesData = [
   {
     id: 1,
-    age: "26-35", // was 29
+    age: "26-35",
     gender: "Female",
     race: "Asian",
     sexuality: "Bisexual",
@@ -15,7 +15,7 @@ const data = [
   },
   {
     id: 2,
-    age: "36-50", // was 42
+    age: "36-50",
     gender: "Male",
     race: "Black",
     sexuality: "Straight",
@@ -26,7 +26,7 @@ const data = [
   },
   {
     id: 3,
-    age: "26-35", // was 35
+    age: "26-35",
     gender: "Non-binary",
     race: "White",
     sexuality: "Pansexual",
@@ -37,7 +37,7 @@ const data = [
   },
   {
     id: 4,
-    age: "19-25", // was 24
+    age: "19-25",
     gender: "Male",
     race: "Latino",
     sexuality: "Gay",
@@ -48,7 +48,7 @@ const data = [
   },
   {
     id: 5,
-    age: "26-35", // was 31
+    age: "26-35",
     gender: "Female",
     race: "Middle Eastern",
     sexuality: "Asexual",
@@ -60,39 +60,67 @@ const data = [
 ];
 
 const filtersData = {
-  age: ["0-18", "19-25", "26-35", "36-50", "50+"],
-  gender: ["Male", "Female", "Non-binary"],
-  race: ["White", "Black", "Asian", "Latino", "Middle Eastern"],
-  sexuality: ["Straight", "Gay", "Bisexual", "Pansexual", "Asexual"],
-  nationality: ["American", "Japanese", "Canadian", "Mexican", "Egyptian"],
-};
-
-const selectOptions = {
-  flavour: [
-    { value: "chocolate", label: "Chocolate" },
-    { value: "strawberry", label: "Strawberry" },
-    { value: "vanilla", label: "Vanilla" },
+  age: [
+    { value: "0-18", label: "0-18" },
+    { value: "19-25", label: "19-25" },
+    { value: "26-35", label: "26-35" },
+    { value: "36-50", label: "36-50" },
+    { value: "50+", label: "50+" },
   ],
   gender: [
-    { value: "female", label: "Female" },
     { value: "male", label: "Male" },
+    { value: "female", label: "Female" },
     { value: "non-binary", label: "Non-binary" },
   ],
-  wawa: [
-    { value: "female", label: "Female" },
-    { value: "male", label: "Male" },
-    { value: "non-binary", label: "Non-binary" },
-    { value: "no-binary", label: "Non-binary" },
-    { value: "n-binary", label: "Non-binary" },
-    { value: "binary", label: "Non-binary" },
+  race: [
+    { value: "white", label: "White" },
+    { value: "black", label: "Black" },
+    { value: "asian", label: "Asian" },
+    { value: "latino", label: "Latino" },
+    { value: "middle eastern", label: "Middle Eastern" },
+  ],
+  sexuality: [
+    { value: "straight", label: "Straight" },
+    { value: "gay", label: "Gay" },
+    { value: "bisexual", label: "Bisexual" },
+    { value: "pansexual", label: "Pansexual" },
+    { value: "asexual", label: "Asexual" },
+  ],
+  nationality: [
+    { value: "american", label: "American" },
+    { value: "japanese", label: "Japanese" },
+    { value: "canadian", label: "Canadian" },
+    { value: "mexican", label: "Mexican" },
+    { value: "egyptian", label: "Egyptian" },
   ],
 };
+
+// const selectOptions = {
+//   flavour: [
+//     { value: "chocolate", label: "Chocolate" },
+//     { value: "strawberry", label: "Strawberry" },
+//     { value: "vanilla", label: "Vanilla" },
+//   ],
+//   gender: [
+//     { value: "female", label: "Female" },
+//     { value: "male", label: "Male" },
+//     { value: "non-binary", label: "Non-binary" },
+//   ],
+//   wawa: [
+//     { value: "female", label: "Female" },
+//     { value: "male", label: "Male" },
+//     { value: "non-binary", label: "Non-binary" },
+//     { value: "no-binary", label: "Non-binary" },
+//     { value: "n-binary", label: "Non-binary" },
+//     { value: "binary", label: "Non-binary" },
+//   ],
+// };
 
 const OurStories = () => {
   return (
     <div className="ourStories">
       <h1>Our Stories</h1>
-      <FilteredList selectOptions={selectOptions} />
+      <FilteredList selectOptions={filtersData} storiesData={storiesData} />
     </div>
   );
 };
