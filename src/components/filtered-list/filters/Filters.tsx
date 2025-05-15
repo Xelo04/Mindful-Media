@@ -48,10 +48,10 @@ const Filters = ({ selectOptions, onFiltersChange }: FiltersProps) => {
       </div>
 
       {/* Display selected options */}
-      <div className="selected-filters">
+      {/* <div className="selected-filters">
         <h2>Selected Filters:</h2>
         <pre>{JSON.stringify(selectedFilters, null, 2)}</pre>
-      </div>
+      </div> */}
     </div>
   );
 };
