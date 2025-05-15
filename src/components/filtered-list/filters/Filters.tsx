@@ -2,15 +2,15 @@ import { useState } from "react";
 import Filter from "./filter/Filter";
 import "./filters.scss";
 
-// Props for FiltersList
-interface FiltersListProps {
+// Props for Filters
+interface FiltersProps {
   selectOptions: {
     [key: string]: { value: string; label: string }[]; // Dynamic keys for filters
   };
   onFiltersChange: (filters: Record<string, any>) => void; // Callback to pass selected filters to the parent
 }
 
-const FiltersList = ({ selectOptions, onFiltersChange }: FiltersListProps) => {
+const Filters = ({ selectOptions, onFiltersChange }: FiltersProps) => {
   // State to manage selected options for all filters
   const [selectedFilters, setSelectedFilters] = useState<Record<string, any>>(
     Object.keys(selectOptions).reduce((acc, key) => {
@@ -56,4 +56,4 @@ const FiltersList = ({ selectOptions, onFiltersChange }: FiltersListProps) => {
   );
 };
 
-export default FiltersList;
+export default Filters;

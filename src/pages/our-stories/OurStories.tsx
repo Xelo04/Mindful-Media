@@ -1,5 +1,4 @@
-import Filters from "../../components/filtered-list/filters/Filters";
-
+import FilteredList from "../../components/filtered-list/FilteredList";
 import "./ourStories.scss";
 
 const data = [
@@ -88,20 +87,12 @@ const selectOptions = {
     { value: "binary", label: "Non-binary" },
   ],
 };
-const handleFiltersChange = (filters: Record<string, any>) => {
-  console.log("Updated filters:", filters);
-};
 
 const OurStories = () => {
   return (
     <div className="ourStories">
       <h1>Our Stories</h1>
-      <span>---</span>
-      <Filters
-        selectOptions={selectOptions}
-        onFiltersChange={handleFiltersChange}
-      />
-      <span>---</span>
+      <FilteredList selectOptions={selectOptions} />
     </div>
   );
 };
