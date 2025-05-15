@@ -1,6 +1,6 @@
 import { useState, useMemo } from "react";
 import Filters from "./filters/Filters";
-// import './filteredlist.scss';
+import "./filteredStories.scss";
 
 const storiesPerPage = 1;
 
@@ -144,7 +144,7 @@ const FilteredStories = ({
           onClick={() => handlePageChange(currentPage + 1)}
           disabled={currentPage === totalPages}
         >
-          <img src="arrow_right.svg" alt="Next Page" />
+          <span className="material-icons">arrow_right</span>
         </button>
       </div>
     </div>
