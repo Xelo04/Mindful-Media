@@ -1,5 +1,5 @@
 // The Filter component is a reusable multi-select dropdown built using the react-select library.
-// It allows users to select multiple options from a list and passes the selected options back
+// It allows users to select multiple (up to maxOptions) options from a list and passes the selected options back
 // to the parent component via a callback function. The component is styled using SCSS
 // Props are: options - an array of objects with value and label properties - example: const options = [{ value: "chocolate", label: "Chocolate" }]
 // onSelectionChange - a callback function to handle the selected options
@@ -8,6 +8,8 @@
 import { useState } from "react";
 import Select from "react-select";
 import "./filter.scss";
+
+const maxOptions = 5;
 
 interface Option {
   value: string;
@@ -26,15 +28,13 @@ function Filter({ options, onSelectionChange, placeholderName }: FilterProps) {
 
   const handleChange = (newValue: unknown) => {
     if (Array.isArray(newValue)) {
-      // Prevent selecting more than 5 options
-      if (newValue.length > 5) {
-        alert("You can select up to 5 options only.");
+      if (newValue.length > maxOptions) {
+        alert(`You can select up to ${maxOptions} options only.`);
         return;
       }
       setSelectedOptions(newValue);
       onSelectionChange(newValue);
     } else if (newValue === null) {
-      // Handle clearing all selections
       setSelectedOptions(null);
       onSelectionChange(null);
     }
@@ -56,6 +56,7 @@ function Filter({ options, onSelectionChange, placeholderName }: FilterProps) {
       <Select
         isMulti
         classNamePrefix="filter"
+        // styles={customStyles}
         options={options}
         placeholder={`Select ${placeholderName}`}
         value={selectedOptions}
