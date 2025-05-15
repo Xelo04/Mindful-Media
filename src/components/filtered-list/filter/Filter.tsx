@@ -30,12 +30,24 @@ function Filter({ options, onSelectionChange, placeholderName }: FilterProps) {
       onSelectionChange(newValue);
     }
   };
+  // const customStyles = {
+  //   control: (provided: any) => ({
+  //     ...provided,
+  //     backgroundColor: "red",
+  //     border: "1px solid #ccc",
+  //     boxShadow: "none",
+  //     "&:hover": {
+  //       border: "1px solid #aaa",
+  //     },
+  //   }),
+  // };
 
   return (
-    <div>
+    <div className="filter-container">
       <Select
         isMulti
-        classNamePrefix="select-filter"
+        // styles={customStyles}
+        classNamePrefix="filter"
         options={options}
         placeholder={`Select ${placeholderName}`}
         value={selectedOptions}

@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Filter from "./filter/Filter";
-// import "./filterslist.scss";
+import "./filters.scss";
 
 // Props for FiltersList
 interface FiltersListProps {
@@ -32,13 +32,11 @@ const FiltersList = ({ selectOptions, onFiltersChange }: FiltersListProps) => {
   };
 
   return (
-    <div className="filterslist">
+    <div className="filters-container">
       <h1>Reusable Filters Component</h1>
 
-      {/* Dynamically render filters */}
-      {Object.entries(selectOptions).map(([filterKey, options]) => (
-        <div key={filterKey} className="filter-container">
-          <h2>{filterKey.charAt(0).toUpperCase() + filterKey.slice(1)}</h2>
+      <div className="filters">
+        {Object.entries(selectOptions).map(([filterKey, options]) => (
           <Filter
             options={options}
             onSelectionChange={(selected) =>
@@ -48,8 +46,8 @@ const FiltersList = ({ selectOptions, onFiltersChange }: FiltersListProps) => {
               filterKey.charAt(0).toUpperCase() + filterKey.slice(1)
             }
           />
-        </div>
-      ))}
+        ))}
+      </div>
 
       {/* Display selected options */}
       <div className="selected-filters">

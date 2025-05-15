@@ -1,4 +1,4 @@
-import FilteredList from "../../components/filtered-list/FilteredList";
+import Filters from "../../components/filtered-list/Filters";
 
 import "./ourStories.scss";
 
@@ -94,7 +94,7 @@ const OurStories = () => {
     <div className="ourStories">
       <h1>Our Stories</h1>
       <span>---</span>
-      <FilteredList
+      <Filters
         selectOptions={selectOptions}
         onFiltersChange={handleFiltersChange}
       />
