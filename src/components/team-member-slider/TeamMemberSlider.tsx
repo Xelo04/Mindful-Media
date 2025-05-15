@@ -24,8 +24,8 @@ const TeamMemberSlider = () => {
   };
   return (
     <div className="team-member-slider">
-      <button className="arrow-left" onClick={handlePrev}>
-        <img src="arrow_left.svg" alt="Previous" />
+      <button onClick={handlePrev}>
+        <span className="material-icons">arrow_left</span>
       </button>
       <img
         className="team-member-image"
@@ -38,8 +38,8 @@ const TeamMemberSlider = () => {
         </h3>
         <p>{teamMembers[currentIndex].description}</p>
       </div>
-      <button className="arrow-right" onClick={handleNext}>
-        <img src="arrow_right.svg" alt="Next" />
+      <button onClick={handleNext}>
+        <span className="material-icons">arrow_right</span>
       </button>
     </div>
   );
