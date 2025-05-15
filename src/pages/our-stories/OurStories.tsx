@@ -1,4 +1,4 @@
-import Filters from "../../components/filtered-list/Filters";
+import Filters from "../../components/filtered-list/filters/Filters";
 
 import "./ourStories.scss";
 

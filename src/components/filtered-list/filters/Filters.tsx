@@ -33,8 +33,6 @@ const FiltersList = ({ selectOptions, onFiltersChange }: FiltersListProps) => {
 
   return (
     <div className="filters-container">
-      <h1>Reusable Filters Component</h1>
-
       <div className="filters">
         {Object.entries(selectOptions).map(([filterKey, options]) => (
           <Filter
