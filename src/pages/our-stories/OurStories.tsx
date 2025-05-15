@@ -83,6 +83,9 @@ const selectOptions = {
     { value: "female", label: "Female" },
     { value: "male", label: "Male" },
     { value: "non-binary", label: "Non-binary" },
+    { value: "no-binary", label: "Non-binary" },
+    { value: "n-binary", label: "Non-binary" },
+    { value: "binary", label: "Non-binary" },
   ],
 };
 const handleFiltersChange = (filters: Record<string, any>) => {

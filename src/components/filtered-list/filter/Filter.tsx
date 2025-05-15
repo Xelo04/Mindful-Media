@@ -25,9 +25,18 @@ function Filter({ options, onSelectionChange, placeholderName }: FilterProps) {
   const [selectedOptions, setSelectedOptions] = useState<Option[] | null>(null);
 
   const handleChange = (newValue: unknown) => {
-    if (Array.isArray(newValue) || newValue === null) {
+    if (Array.isArray(newValue)) {
+      // Prevent selecting more than 5 options
+      if (newValue.length > 5) {
+        alert("You can select up to 5 options only.");
+        return;
+      }
       setSelectedOptions(newValue);
       onSelectionChange(newValue);
+    } else if (newValue === null) {
+      // Handle clearing all selections
+      setSelectedOptions(null);
+      onSelectionChange(null);
     }
   };
   // const customStyles = {
@@ -46,7 +55,6 @@ function Filter({ options, onSelectionChange, placeholderName }: FilterProps) {
     <div className="filter-container">
       <Select
         isMulti
-        // styles={customStyles}
         classNamePrefix="filter"
         options={options}
         placeholder={`Select ${placeholderName}`}
