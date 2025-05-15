@@ -1,4 +1,4 @@
-import FilteredList from "../../components/filtered-list/FilteredList";
+import FilteredList from "../../components/filtered-list/FilteredStories";
 import "./ourStories.scss";
 
 const storiesData = [

@@ -1,7 +1,7 @@
-import FiltersList from "./filters/Filters";
+import Filters from "./filters/Filters";
 // import './filteredlist.scss';
 
-interface FiltersListProps {
+interface FilteredStoriesProps {
   selectOptions: {
     [key: string]: { value: string; label: string }[];
   };
@@ -21,11 +21,14 @@ const handleFiltersChange = (filters: Record<string, any>) => {
   console.log("Updated filters:", filters);
 };
 
-const FilteredList = ({ selectOptions, storiesData }: FiltersListProps) => {
+const FilteredStories = ({
+  selectOptions,
+  storiesData,
+}: FilteredStoriesProps) => {
   return (
     <div className="filteredlist">
       <span>---</span>
-      <FiltersList
+      <Filters
         selectOptions={selectOptions}
         onFiltersChange={handleFiltersChange}
       />
@@ -43,4 +46,4 @@ const FilteredList = ({ selectOptions, storiesData }: FiltersListProps) => {
   );
 };
 
-export default FilteredList;
+export default FilteredStories;
