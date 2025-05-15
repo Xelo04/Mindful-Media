@@ -1,4 +1,4 @@
-import FiltersList from "../../components/filters-list/FiltersList";
+import FilteredList from "../../components/filtered-list/FilteredList";
 
 import "./ourStories.scss";
 
@@ -68,23 +68,37 @@ const filtersData = {
   nationality: ["American", "Japanese", "Canadian", "Mexican", "Egyptian"],
 };
 
+const selectOptions = {
+  flavour: [
+    { value: "chocolate", label: "Chocolate" },
+    { value: "strawberry", label: "Strawberry" },
+    { value: "vanilla", label: "Vanilla" },
+  ],
+  gender: [
+    { value: "female", label: "Female" },
+    { value: "male", label: "Male" },
+    { value: "non-binary", label: "Non-binary" },
+  ],
+  wawa: [
+    { value: "female", label: "Female" },
+    { value: "male", label: "Male" },
+    { value: "non-binary", label: "Non-binary" },
+  ],
+};
+const handleFiltersChange = (filters: Record<string, any>) => {
+  console.log("Updated filters:", filters);
+};
+
 const OurStories = () => {
   return (
     <div className="ourStories">
       <h1>Our Stories</h1>
-      <span>no elo</span>
-      <FiltersList
-        data={data}
-        filtersData={filtersData}
-        renderItem={(item) => (
-          <>
-            <strong>{item.age}</strong> - {item.gender} - {item.race} -{" "}
-            {item.sexuality} - {item.nationality}
-            <br />
-            <p>{item.shortDescription}</p>
-          </>
-        )}
+      <span>---</span>
+      <FilteredList
+        selectOptions={selectOptions}
+        onFiltersChange={handleFiltersChange}
       />
+      <span>---</span>
     </div>
   );
 };
