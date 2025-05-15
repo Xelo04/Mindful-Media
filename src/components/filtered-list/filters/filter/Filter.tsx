@@ -57,7 +57,7 @@ function Filter({ options, onSelectionChange, placeholderName }: FilterProps) {
         classNamePrefix="filter"
         // styles={customStyles}
         options={options}
-        placeholder={`Select ${placeholderName}`}
+        placeholder={`${placeholderName}`}
         value={selectedOptions}
         onChange={handleChange}
       />

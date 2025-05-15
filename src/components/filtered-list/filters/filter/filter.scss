@@ -6,16 +6,16 @@
     min-width: 200px;
 
     &:hover {
-      border-color: #888;
+      border-color: pink;
     }
   }
 
   .filter__option {
-    background-color: red;
+    background-color: white;
     color: #333;
 
     &--is-focused {
-      background-color: #f0f0f0;
+      background-color: pink;
       color: #000;
     }
 

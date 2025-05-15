@@ -2,7 +2,7 @@ import { useState, useMemo } from "react";
 import Filters from "./filters/Filters";
 import "./filteredStories.scss";
 
-const storiesPerPage = 1;
+const storiesPerPage = 3;
 
 interface Story {
   id: number;
@@ -98,7 +98,6 @@ const FilteredStories = ({
         onFiltersChange={handleFiltersChange}
       />
       <div className="stories">
-        <h2>Stories:</h2>
         {paginatedStories.map((story) => (
           <div key={story.id} className="story">
             <p>{story.age}</p>
