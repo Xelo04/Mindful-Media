@@ -44,6 +44,9 @@ const FiltersList = ({ selectOptions, onFiltersChange }: FiltersListProps) => {
             onSelectionChange={(selected) =>
               handleFilterChange(filterKey, selected)
             }
+            placeholderName={
+              filterKey.charAt(0).toUpperCase() + filterKey.slice(1)
+            }
           />
         </div>
       ))}

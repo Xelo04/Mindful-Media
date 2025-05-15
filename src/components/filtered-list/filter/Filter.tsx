@@ -3,6 +3,7 @@
 // to the parent component via a callback function. The component is styled using SCSS
 // Props are: options - an array of objects with value and label properties - example: const options = [{ value: "chocolate", label: "Chocolate" }]
 // onSelectionChange - a callback function to handle the selected options
+// placeholderName - a string to display as a placeholder in the select input - example: placeholderName={"flavour"}
 
 import { useState } from "react";
 import Select from "react-select";
@@ -17,9 +18,10 @@ interface Option {
 interface FilterProps {
   options: Option[];
   onSelectionChange: (selectedOptions: Option[] | null) => void;
+  placeholderName: string;
 }
 
-function Filter({ options, onSelectionChange }: FilterProps) {
+function Filter({ options, onSelectionChange, placeholderName }: FilterProps) {
   const [selectedOptions, setSelectedOptions] = useState<Option[] | null>(null);
 
   const handleChange = (newValue: unknown) => {
@@ -35,7 +37,7 @@ function Filter({ options, onSelectionChange }: FilterProps) {
         isMulti
         classNamePrefix="select-filter"
         options={options}
-        placeholder="Select options"
+        placeholder={`Select ${placeholderName}`}
         value={selectedOptions}
         onChange={handleChange}
       />
