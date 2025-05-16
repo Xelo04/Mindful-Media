@@ -114,14 +114,20 @@ const FilteredStories = ({
             </div>
             <p>Their short message</p>
             <p className="short-description">{story.shortDescription}</p>
-            {visibleDescriptions.has(story.id) && (
-              <div className="long-description">
-                <div className="title">
-                  <p>Their story</p>
-                </div>
-                <p>{story.longDescription}</p>
-              </div>
-            )}
+            <div
+              className={`long-description${
+                visibleDescriptions.has(story.id) ? " open" : ""
+              }`}
+            >
+              {visibleDescriptions.has(story.id) && (
+                <>
+                  <div className="title">
+                    <p>Their story</p>
+                  </div>
+                  <p>{story.longDescription}</p>
+                </>
+              )}
+            </div>
             <button onClick={() => toggleDescription(story.id)}>
               {visibleDescriptions.has(story.id) ? "COLLAPSE" : "READ MORE"}
             </button>
@@ -134,11 +140,11 @@ const FilteredStories = ({
         <button
           onClick={() => handlePageChange(currentPage - 1)}
           disabled={currentPage === 1}
+          className="arrow"
         >
           <span className="material-icons">arrow_left</span>
         </button>
-        <div className="pages-numeration">
-          <span>PAGE</span>
+        <div className="pages">
           {Array.from({ length: totalPages }, (_, index) => (
             <button
               key={index + 1}
@@ -152,6 +158,7 @@ const FilteredStories = ({
         <button
           onClick={() => handlePageChange(currentPage + 1)}
           disabled={currentPage === totalPages}
+          className="arrow"
         >
           <span className="material-icons">arrow_right</span>
         </button>
