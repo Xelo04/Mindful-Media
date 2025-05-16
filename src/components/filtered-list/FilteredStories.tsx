@@ -98,41 +98,45 @@ const FilteredStories = ({
         onFiltersChange={handleFiltersChange}
       />
       <div className="stories">
-        {paginatedStories.map((story) => (
-          <div key={story.id} className="story">
-            <div className="info-container">
-              <p>AGE</p>
-              <p>{story.age}</p>
-              <p>SEXUALITY</p>
-              <p>{story.sexuality}</p>
-              <p>GENDER</p>
-              <p>{story.gender}</p>
-              <p>NATIONALITY</p>
-              <p>{story.nationality}</p>
-              <p>RACE</p>
-              <p>{story.race}</p>
+        {filteredStories.length === 0 ? (
+          <span>No stories found</span>
+        ) : (
+          paginatedStories.map((story) => (
+            <div key={story.id} className="story">
+              <div className="info-container">
+                <p>AGE</p>
+                <p>{story.age}</p>
+                <p>SEXUALITY</p>
+                <p>{story.sexuality}</p>
+                <p>GENDER</p>
+                <p>{story.gender}</p>
+                <p>NATIONALITY</p>
+                <p>{story.nationality}</p>
+                <p>RACE</p>
+                <p>{story.race}</p>
+              </div>
+              <p>Their short message</p>
+              <p className="short-description">{story.shortDescription}</p>
+              <div
+                className={`long-description${
+                  visibleDescriptions.has(story.id) ? " open" : ""
+                }`}
+              >
+                {visibleDescriptions.has(story.id) && (
+                  <>
+                    <div className="title">
+                      <p>Their story</p>
+                    </div>
+                    <p>{story.longDescription}</p>
+                  </>
+                )}
+              </div>
+              <button onClick={() => toggleDescription(story.id)}>
+                {visibleDescriptions.has(story.id) ? "COLLAPSE" : "READ MORE"}
+              </button>
             </div>
-            <p>Their short message</p>
-            <p className="short-description">{story.shortDescription}</p>
-            <div
-              className={`long-description${
-                visibleDescriptions.has(story.id) ? " open" : ""
-              }`}
-            >
-              {visibleDescriptions.has(story.id) && (
-                <>
-                  <div className="title">
-                    <p>Their story</p>
-                  </div>
-                  <p>{story.longDescription}</p>
-                </>
-              )}
-            </div>
-            <button onClick={() => toggleDescription(story.id)}>
-              {visibleDescriptions.has(story.id) ? "COLLAPSE" : "READ MORE"}
-            </button>
-          </div>
-        ))}
+          ))
+        )}
       </div>
 
       {/* Pagination Controls */}
