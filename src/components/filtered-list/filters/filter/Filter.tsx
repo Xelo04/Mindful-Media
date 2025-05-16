@@ -51,13 +51,13 @@ function Filter({ options, onSelectionChange, placeholderName }: FilterProps) {
     <div className="filter-container">
       <Select
         isMulti
-        classNamePrefix="filter"
         styles={customStyles}
         options={options}
         noOptionsMessage={() => "All options selected"}
         placeholder={`${placeholderName.toUpperCase()}`}
         value={selectedOptions}
         onChange={handleChange}
+        classNamePrefix="filter"
       />
     </div>
   );

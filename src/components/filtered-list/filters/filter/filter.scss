@@ -15,6 +15,10 @@
     color: constants.$white-color;
   }
 
+  .filter__input {
+    color: constants.$white-color !important;
+  }
+
   .filter__menu {
     background-color: constants.$soft-bg;
     border: 2px solid constants.$black-color;
@@ -63,7 +67,7 @@
     color: constants.$white-color;
 
     &--is-focused {
-      background-color: pink;
+      background-color: constants.$light-bg;
       color: constants.$black-color;
     }
   }
