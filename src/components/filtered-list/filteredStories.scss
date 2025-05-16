@@ -1,18 +1,35 @@
-.pagination button {
-  padding: 8px 12px;
-  border: 1px solid #ccc;
-  background-color: #f9f9f9;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
-}
+.filteredlist {
+  .stories {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 20px;
+    .story {
+      .info-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+    }
+  }
 
-.pagination button.active {
-  background-color: red; /* Red background for active button */
-  color: white; /* White text for contrast */
-  border-color: red; /* Red border for consistency */
-}
+  .pagination {
+    .pagination button {
+      padding: 8px 12px;
+      border: 1px solid #ccc;
+      background-color: #f9f9f9;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
 
-.pagination button:disabled {
-  background-color: #e0e0e0;
-  cursor: default;
+    .pagination button.active {
+      background-color: red; /* Red background for active button */
+      color: white; /* White text for contrast */
+      border-color: red; /* Red border for consistency */
+    }
+
+    .pagination button:disabled {
+      background-color: #e0e0e0;
+      cursor: default;
+    }
+  }
 }

@@ -100,21 +100,31 @@ const FilteredStories = ({
       <div className="stories">
         {paginatedStories.map((story) => (
           <div key={story.id} className="story">
-            <p>{story.age}</p>
-            <p>{story.gender}</p>
-            <p>{story.race}</p>
-            <p>{story.sexuality}</p>
-            <p>{story.nationality}</p>
+            <div className="info-container">
+              <p>AGE</p>
+              <p>{story.age}</p>
+              <p>SEXUALITY</p>
+              <p>{story.sexuality}</p>
+              <p>GENDER</p>
+              <p>{story.gender}</p>
+              <p>NATIONALITY</p>
+              <p>{story.nationality}</p>
+              <p>RACE</p>
+              <p>{story.race}</p>
+            </div>
+            <p>Their short message</p>
             <p>{story.shortDescription}</p>
             {visibleDescriptions.has(story.id) && (
-              <p>{story.longDescription}</p>
+              <div>
+                <p>Their story</p>
+                <p>{story.longDescription}</p>
+              </div>
             )}
             <button onClick={() => toggleDescription(story.id)}>
               {visibleDescriptions.has(story.id)
                 ? "Hide Description"
                 : "Show Description"}
             </button>
-            <p>-----------------------------------</p>
           </div>
         ))}
       </div>
