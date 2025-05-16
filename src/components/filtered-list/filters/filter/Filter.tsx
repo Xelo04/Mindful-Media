@@ -38,26 +38,24 @@ function Filter({ options, onSelectionChange, placeholderName }: FilterProps) {
       onSelectionChange(null);
     }
   };
-  // const customStyles = {
-  //   control: (provided: any) => ({
-  //     ...provided,
-  //     backgroundColor: "red",
-  //     border: "1px solid #ccc",
-  //     boxShadow: "none",
-  //     "&:hover": {
-  //       border: "1px solid #aaa",
-  //     },
-  //   }),
-  // };
+
+  const customStyles = {
+    noOptionsMessage: (base: any) => ({
+      ...base,
+      color: "white",
+      padding: "5px",
+    }),
+  };
 
   return (
     <div className="filter-container">
       <Select
         isMulti
         classNamePrefix="filter"
-        // styles={customStyles}
+        styles={customStyles}
         options={options}
-        placeholder={`${placeholderName}`}
+        noOptionsMessage={() => "All options selected"}
+        placeholder={`${placeholderName.toUpperCase()}`}
         value={selectedOptions}
         onChange={handleChange}
       />

@@ -1,27 +1,71 @@
-.filter-container {
-  .filter__control {
-    background-color: white;
-    border: 1px solid #ccc;
-    box-shadow: none;
-    min-width: 200px;
+@use "../../../../styles/variables.scss" as constants;
 
+.filter-container {
+  width: 100%;
+
+  .filter__indicator-separator {
+    display: none;
+  }
+
+  .filter__placeholder {
+    color: constants.$white-color;
+  }
+
+  .filter__menu {
+    background-color: constants.$soft-bg;
+    border: 2px solid constants.$black-color;
+  }
+
+  // Changes to the filter input
+  .filter__multi-value {
+    background: constants.$soft-bg;
+    color: red;
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+  .filter__multi-value__label {
+    color: white;
+  }
+  .filter__multi-value__remove {
+    color: red;
+    cursor: pointer;
     &:hover {
-      border-color: pink;
+      background-color: red;
+      color: black;
+    }
+  }
+
+  // The "x" (remove) icon for all selected options
+  .filter__clear-indicator {
+    display: none;
+  }
+
+  .filter__control {
+    cursor: pointer;
+
+    background-color: constants.$soft-bg;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    text-align: center;
+  }
+
+  .filter__dropdown-indicator {
+    display: none;
+    color: constants.$white-color;
+    transition: color 0.2s;
+    &:hover {
+      color: constants.$black-color;
     }
   }
 
   .filter__option {
-    background-color: white;
-    color: #333;
+    background-color: constants.$soft-bg;
+    color: constants.$white-color;
 
     &--is-focused {
       background-color: pink;
-      color: #000;
-    }
-
-    &--is-selected {
-      background-color: #ddd;
-      color: #000;
+      color: constants.$black-color;
     }
   }
 }
