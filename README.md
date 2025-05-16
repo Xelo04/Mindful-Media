@@ -1,4 +1,4 @@
-aaaaa# Mindful-Media
+# Mindful-Media
 tools:
 react select
 google icons
