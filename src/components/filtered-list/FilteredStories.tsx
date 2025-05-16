@@ -113,17 +113,17 @@ const FilteredStories = ({
               <p>{story.race}</p>
             </div>
             <p>Their short message</p>
-            <p>{story.shortDescription}</p>
+            <p className="short-description">{story.shortDescription}</p>
             {visibleDescriptions.has(story.id) && (
-              <div>
-                <p>Their story</p>
+              <div className="long-description">
+                <div className="title">
+                  <p>Their story</p>
+                </div>
                 <p>{story.longDescription}</p>
               </div>
             )}
             <button onClick={() => toggleDescription(story.id)}>
-              {visibleDescriptions.has(story.id)
-                ? "Hide Description"
-                : "Show Description"}
+              {visibleDescriptions.has(story.id) ? "COLLAPSE" : "READ MORE"}
             </button>
           </div>
         ))}

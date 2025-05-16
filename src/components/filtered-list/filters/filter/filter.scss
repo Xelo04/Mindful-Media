@@ -28,14 +28,14 @@
   .filter__multi-value {
     background: constants.$soft-bg;
     color: red;
-    border: 2px solid black;
+    border: 2px solid white;
     border-radius: 5px;
   }
   .filter__multi-value__label {
     color: white;
   }
   .filter__multi-value__remove {
-    color: red;
+    color: black;
     cursor: pointer;
     &:hover {
       background-color: red;
