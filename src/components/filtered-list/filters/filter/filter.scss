@@ -6,6 +6,10 @@
   .filter__indicator-separator {
     display: none;
   }
+  // The "x" (remove) icon for all selected options
+  .filter__clear-indicator {
+    display: none;
+  }
 
   .filter__placeholder {
     color: constants.$white-color;
@@ -35,11 +39,6 @@
     }
   }
 
-  // The "x" (remove) icon for all selected options
-  .filter__clear-indicator {
-    display: none;
-  }
-
   .filter__control {
     cursor: pointer;
 
@@ -51,7 +50,7 @@
   }
 
   .filter__dropdown-indicator {
-    display: none;
+    // display: none;
     color: constants.$white-color;
     transition: color 0.2s;
     &:hover {
