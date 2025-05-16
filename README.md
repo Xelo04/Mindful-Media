@@ -1,4 +1,4 @@
-a# Mindful-Media
+aa# Mindful-Media
 
 react select
 repair to be more reusable: navbar, footer, TeamMemberSlider
