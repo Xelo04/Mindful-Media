@@ -140,33 +140,35 @@ const FilteredStories = ({
       </div>
 
       {/* Pagination Controls */}
-      <div className="pagination">
-        <button
-          onClick={() => handlePageChange(currentPage - 1)}
-          disabled={currentPage === 1}
-          className="arrow"
-        >
-          <span className="material-icons">arrow_left</span>
-        </button>
-        <div className="pages">
-          {Array.from({ length: totalPages }, (_, index) => (
-            <button
-              key={index + 1}
-              onClick={() => handlePageChange(index + 1)}
-              className={currentPage === index + 1 ? "active" : ""}
-            >
-              {index + 1}
-            </button>
-          ))}
+      {filteredStories.length > 0 && (
+        <div className="pagination">
+          <button
+            onClick={() => handlePageChange(currentPage - 1)}
+            disabled={currentPage === 1}
+            className="arrow"
+          >
+            <span className="material-icons">arrow_left</span>
+          </button>
+          <div className="pages">
+            {Array.from({ length: totalPages }, (_, index) => (
+              <button
+                key={index + 1}
+                onClick={() => handlePageChange(index + 1)}
+                className={currentPage === index + 1 ? "active" : ""}
+              >
+                {index + 1}
+              </button>
+            ))}
+          </div>
+          <button
+            onClick={() => handlePageChange(currentPage + 1)}
+            disabled={currentPage === totalPages}
+            className="arrow"
+          >
+            <span className="material-icons">arrow_right</span>
+          </button>
         </div>
-        <button
-          onClick={() => handlePageChange(currentPage + 1)}
-          disabled={currentPage === totalPages}
-          className="arrow"
-        >
-          <span className="material-icons">arrow_right</span>
-        </button>
-      </div>
+      )}
     </div>
   );
 };
