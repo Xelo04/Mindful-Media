@@ -7,6 +7,9 @@
     gap: 16px;
     margin-top: 20px;
     align-items: center;
+    .no-stories {
+      font-size: xx-large;
+    }
     .story {
       display: flex;
       flex-direction: column;
@@ -84,6 +87,7 @@
       color: #ccc;
     }
     .pages {
+      display: flex;
       button {
         font-size: 18px;
         padding-inline: 3px;
@@ -95,7 +99,7 @@
 
       button.active {
         color: constants.$soft-bg;
-        text-decoration: underline;
+        font-size: x-large;
       }
     }
   }

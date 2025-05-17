@@ -99,7 +99,7 @@ const FilteredStories = ({
       />
       <div className="stories">
         {filteredStories.length === 0 ? (
-          <span>No stories found</span>
+          <span className="no-stories">No stories found</span>
         ) : (
           paginatedStories.map((story) => (
             <div key={story.id} className="story">
