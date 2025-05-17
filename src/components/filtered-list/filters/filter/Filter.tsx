@@ -28,7 +28,7 @@ function Filter({ options, onSelectionChange, placeholderName }: FilterProps) {
   const handleChange = (newValue: unknown) => {
     if (Array.isArray(newValue)) {
       if (newValue.length > maxOptions) {
-        alert(`You can select up to ${maxOptions} options only.`);
+        alert(`You can select up to ${maxOptions} options.`);
         return;
       }
       setSelectedOptions(newValue);
