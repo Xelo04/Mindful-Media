@@ -3,6 +3,7 @@
 tools:
 react select
 google icons
+emailjs-com
 
 to do:
 repair to be more reusable: navbar, footer, TeamMemberSlider
