@@ -20,10 +20,10 @@ const UserStoryForm = () => {
 
     emailjs
       .sendForm(
-        "service_f1fv58a",
-        "template_42r85zo",
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         formRef.current!,
-        "L7RyFInouxnqvx4T3"
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => alert("Message sent successfully!"),
