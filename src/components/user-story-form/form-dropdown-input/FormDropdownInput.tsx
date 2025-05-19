@@ -5,7 +5,7 @@
 // onSelectionChange - a callback function to handle the selected options
 // placeholderName - a string to display as a placeholder in the select input - example: placeholderName={"flavour"}
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Select from "react-select";
 
 interface Option {
@@ -16,17 +16,27 @@ interface Option {
 interface FormDropdownInputProps {
   name: string;
   options: Option[];
+  onChange?: (value: string) => void;
 }
 
-function FormDropdownInput({ name, options }: FormDropdownInputProps) {
+function FormDropdownInput({
+  name,
+  options,
+  onChange,
+}: FormDropdownInputProps) {
   const [selected, setSelected] = useState<Option | null>(null);
+
+  useEffect(() => {
+    if (onChange) {
+      onChange(selected ? selected.value : "");
+    }
+  }, [selected, onChange]);
 
   return (
     <div className="filter-container">
       <Select
         options={options}
-        onChange={(selectedOption) => setSelected(selectedOption)}
-        noOptionsMessage={() => "All options selected"}
+        onChange={(option) => setSelected(option)}
         placeholder="Your answer"
       />
       <input type="hidden" name={name} value={selected ? selected.value : ""} />

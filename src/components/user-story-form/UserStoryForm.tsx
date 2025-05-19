@@ -14,9 +14,26 @@ const extraQuestion = [
 const UserStoryForm = () => {
   const formRef = useRef(null);
   const [showStory, setShowStory] = useState(false);
+  const [extraQuestionValue, setExtraQuestionValue] = useState("");
+  const [ageValue, setAgeValue] = useState("");
+  const [genderValue, setGenderValue] = useState("");
+  const [sexualityValue, setSexualityValue] = useState("");
+  const [nationalityValue, setNationalityValue] = useState("");
 
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
+
+    if (!extraQuestionValue) {
+      alert("Please select missing answers.");
+      return;
+    }
+
+    if (showStory) {
+      if (!ageValue || !genderValue || !sexualityValue || !nationalityValue) {
+        alert("Please answer all questions.");
+        return;
+      }
+    }
 
     emailjs
       .sendForm(
@@ -26,7 +43,10 @@ const UserStoryForm = () => {
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
       .then(
-        () => alert("Message sent successfully!"),
+        () => {
+          alert("Message sent successfully!");
+          window.location.reload();
+        },
         (error) => alert("Failed to send message: " + error.text)
       );
   };
@@ -35,7 +55,11 @@ const UserStoryForm = () => {
     <div className="userStoryForm">
       <form ref={formRef} onSubmit={sendEmail}>
         <h4>How much time do you spend on social media on daily basis?</h4>
-        <FormDropdownInput name="extraQuestion" options={extraQuestion} />
+        <FormDropdownInput
+          name="extraQuestion"
+          options={extraQuestion}
+          onChange={setExtraQuestionValue}
+        />
         <h4>What do you use social media most for or why do you use it?</h4>
         <input
           name="question1"
@@ -98,18 +122,38 @@ const UserStoryForm = () => {
         {showStory && (
           <>
             <h4>Please leave your email address below.</h4>
-            <input name="email" type="email" placeholder="Your Email" />
+            <input
+              name="email"
+              type="email"
+              placeholder="Your Email"
+              required
+            />
             <h4>Any stories, messages for others you would like to add?</h4>
-            <input name="story" type="text" placeholder="Your Answer" />
-            <FormDropdownInput name="age" options={filtersData.age} />
-            <FormDropdownInput name="gender" options={filtersData.gender} />
+            <input
+              name="story"
+              type="text"
+              placeholder="Your Answer"
+              required
+            />
+            <FormDropdownInput
+              name="age"
+              options={filtersData.age}
+              onChange={setAgeValue}
+            />
+            <FormDropdownInput
+              name="gender"
+              options={filtersData.gender}
+              onChange={setGenderValue}
+            />
             <FormDropdownInput
               name="sexuality"
               options={filtersData.sexuality}
+              onChange={setSexualityValue}
             />
             <FormDropdownInput
               name="nationality"
               options={filtersData.nationality}
+              onChange={setNationalityValue}
             />
           </>
         )}
