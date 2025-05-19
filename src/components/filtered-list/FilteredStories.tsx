@@ -1,5 +1,5 @@
 import { useState, useMemo } from "react";
-import Filters from "./filters/Filters";
+import Filters from "../filters/Filters";
 import "./filteredStories.scss";
 
 const storiesPerPage = 3;
