@@ -18,7 +18,7 @@
       width: 90%;
       padding-block: 20px;
     }
-    input {
+    .form-input {
       width: 90%;
       border-radius: 10px;
       border: 1.5px solid constants.$soft-bg;
@@ -28,6 +28,11 @@
       color: constants.$black-color;
       outline: none;
 
+      &:hover,
+      &:focus {
+        border: 1.5px solid constants.$black-color !important;
+        box-shadow: 0 0 0 2px rgba(constants.$black-color, 0.15);
+      }
       &::placeholder {
         color: #b0b0b0;
         font-style: italic;

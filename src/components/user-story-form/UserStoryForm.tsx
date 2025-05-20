@@ -66,6 +66,7 @@ const UserStoryForm = () => {
           type="text"
           placeholder="Your Answer"
           required
+          className="form-input"
         />
         <h4>
           Do you feel safer sharing your thoughts/emotions online than IRL?
@@ -76,6 +77,7 @@ const UserStoryForm = () => {
           type="text"
           placeholder="Your Answer"
           required
+          className="form-input"
         />
         <h4>
           Do you feel more connected with your friends because of social media?
@@ -86,6 +88,7 @@ const UserStoryForm = () => {
           type="text"
           placeholder="Your Answer"
           required
+          className="form-input"
         />
         <h4>
           Have social media ever helped you go through any difficulties? Please
@@ -96,6 +99,7 @@ const UserStoryForm = () => {
           type="text"
           placeholder="Your Answer"
           required
+          className="form-input"
         />
         <h4>
           Have you found any communities or groups on social media that made you
@@ -106,6 +110,7 @@ const UserStoryForm = () => {
           type="text"
           placeholder="Your Answer"
           required
+          className="form-input"
         />
         <h4>
           Would you be interested in talking with us about your responses and
@@ -127,6 +132,7 @@ const UserStoryForm = () => {
               type="email"
               placeholder="Your Email"
               required
+              className="form-input"
             />
             <h4>Any stories, messages for others you would like to add?</h4>
             <input
@@ -134,6 +140,7 @@ const UserStoryForm = () => {
               type="text"
               placeholder="Your Answer"
               required
+              className="form-input"
             />
             <FormDropdownInput
               name="age"
