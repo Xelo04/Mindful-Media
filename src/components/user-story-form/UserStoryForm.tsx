@@ -157,7 +157,9 @@ const UserStoryForm = () => {
             />
           </>
         )}
-        <button type="submit">Send</button>
+        <button type="submit" className="submit-btn">
+          Send
+        </button>
       </form>
     </div>
   );

@@ -1,2 +1,9 @@
+@use "../../styles/variables.scss" as constants;
+
 .yourStory {
+  width: 100%;
+  height: 100%;
+  background: constants.$soft-bg;
+  display: flex;
+  flex-direction: column;
 }

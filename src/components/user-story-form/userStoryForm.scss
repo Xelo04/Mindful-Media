@@ -1,2 +1,87 @@
+@use "../../styles/variables.scss" as constants;
+
 .userStoryForm {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  form {
+    background: constants.$white-color;
+    width: 80%;
+    border: 2px solid constants.$black-color;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h4 {
+      width: 90%;
+      padding-block: 20px;
+    }
+    input {
+      width: 90%;
+      border-radius: 10px;
+      border: 1.5px solid constants.$soft-bg;
+      padding: 12px 16px;
+      margin-bottom: 16px;
+      font-size: 1rem;
+      color: constants.$black-color;
+      outline: none;
+
+      &::placeholder {
+        color: #b0b0b0;
+        font-style: italic;
+      }
+    }
+    .submit-btn {
+      margin-block: 10px;
+      width: 10rem;
+      position: relative;
+      height: 3.5rem;
+      border: 3px ridge red;
+      outline: none;
+      background-color: transparent;
+      color: constants.$black-color;
+      transition: 1s;
+      border-radius: 0.3em;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      align-self: center;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: 3%;
+        width: 95%;
+        height: 40%;
+        background-color: constants.$white-color;
+        transition: 0.5s;
+        transform-origin: center;
+      }
+
+      &::before {
+        content: "";
+        transform-origin: center;
+        position: absolute;
+        top: 80%;
+        left: 3%;
+        width: 95%;
+        height: 40%;
+        background-color: constants.$white-color;
+        transition: 0.5s;
+      }
+
+      &:hover::before,
+      &:hover::after {
+        transform: scale(0);
+      }
+
+      &:hover {
+        box-shadow: inset 0px 0px 25px lightgreen;
+        border: 3px ridge lightgreen;
+      }
+    }
+  }
 }
