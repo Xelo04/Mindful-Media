@@ -16,7 +16,8 @@
     align-items: center;
     h4 {
       width: 90%;
-      padding-block: 20px;
+      padding-top: 20px;
+      padding-bottom: 8px;
     }
     .form-input {
       width: 90%;
@@ -37,6 +38,17 @@
         color: #b0b0b0;
         font-style: italic;
       }
+    }
+    .show-story-btn {
+      width: 35%;
+      border: 2px solid constants.$soft-bg;
+      border-radius: 10px;
+      background-color: constants.$white-color;
+      cursor: pointer;
+      font-size: 1rem;
+      padding: 10px;
+      text-align: center;
+      margin-top: 0 !important;
     }
     .submit-btn {
       margin-block: 10px;
