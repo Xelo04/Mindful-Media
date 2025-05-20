@@ -7,6 +7,7 @@
 
 import { useEffect, useState } from "react";
 import Select from "react-select";
+import "./formDropdownInput.scss";
 
 interface Option {
   value: string;
@@ -33,11 +34,12 @@ function FormDropdownInput({
   }, [selected, onChange]);
 
   return (
-    <div className="filter-container">
+    <div className="input-container">
       <Select
         options={options}
         onChange={(option) => setSelected(option)}
         placeholder="Your answer"
+        classNamePrefix="input-dropdown"
       />
       <input type="hidden" name={name} value={selected ? selected.value : ""} />
     </div>

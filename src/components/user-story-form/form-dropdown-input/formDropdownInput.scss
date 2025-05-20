@@ -1,0 +1,41 @@
+@use "../../../styles/variables.scss" as constants;
+
+.input-container {
+  .input-dropdown__indicator-separator {
+    display: none;
+  }
+  .input-dropdown__placeholder {
+    color: #b0b0b0;
+    font-style: italic;
+  }
+  .input-dropdown__menu {
+    border: 2px solid constants.$black-color;
+  }
+  .input-dropdown__control {
+    cursor: pointer;
+    border: 1.5px solid constants.$soft-bg;
+    border-radius: 10px;
+    transition: color 0.2s;
+    &:hover {
+      border: 1.5px solid constants.$black-color;
+      box-shadow: 0 0 0 2px rgba(constants.$black-color, 0.15);
+    }
+  }
+  .input-dropdown__dropdown-indicator {
+    color: constants.$soft-bg;
+    transition: color 0.2s;
+    &:hover {
+      color: constants.$black-color;
+    }
+  }
+  .input-dropdown__option {
+    &--is-focused {
+      background-color: constants.$light-bg;
+    }
+  }
+  .input-dropdown__control--is-focused,
+  .input-dropdown__control--menu-is-open {
+    border: 1.5px solid constants.$soft-bg !important;
+    box-shadow: 0 0 0 2px rgba(constants.$soft-bg, 0.15);
+  }
+}
