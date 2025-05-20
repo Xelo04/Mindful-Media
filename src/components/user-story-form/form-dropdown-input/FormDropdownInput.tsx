@@ -38,7 +38,7 @@ function FormDropdownInput({
       <Select
         options={options}
         onChange={(option) => setSelected(option)}
-        placeholder="Your answer"
+        placeholder="Your Answer"
         classNamePrefix="input-dropdown"
       />
       <input type="hidden" name={name} value={selected ? selected.value : ""} />

@@ -1,12 +1,15 @@
 @use "../../../styles/variables.scss" as constants;
 
 .input-container {
+  width: 90%;
   .input-dropdown__indicator-separator {
     display: none;
   }
   .input-dropdown__placeholder {
     color: #b0b0b0;
     font-style: italic;
+    padding: 12px 10px;
+    font-size: 1rem;
   }
   .input-dropdown__menu {
     border: 2px solid constants.$black-color;
@@ -19,6 +22,9 @@
     &:hover {
       border: 1.5px solid constants.$black-color;
       box-shadow: 0 0 0 2px rgba(constants.$black-color, 0.15);
+      .input-dropdown__dropdown-indicator {
+        color: constants.$black-color;
+      }
     }
   }
   .input-dropdown__dropdown-indicator {
@@ -35,7 +41,10 @@
   }
   .input-dropdown__control--is-focused,
   .input-dropdown__control--menu-is-open {
-    border: 1.5px solid constants.$soft-bg !important;
-    box-shadow: 0 0 0 2px rgba(constants.$soft-bg, 0.15);
+    border: 1.5px solid constants.$black-color !important;
+    box-shadow: 0 0 0 2px rgba(constants.$black-color, 0.15);
+    .input-dropdown__dropdown-indicator {
+      color: constants.$black-color;
+    }
   }
 }
