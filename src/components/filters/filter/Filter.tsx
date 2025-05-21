@@ -53,7 +53,6 @@ function Filter({ options, onSelectionChange, placeholderName }: FilterProps) {
         isMulti
         styles={customStyles}
         options={options}
-        noOptionsMessage={() => "All options selected"}
         placeholder={`${placeholderName.toUpperCase()}`}
         value={selectedOptions}
         onChange={handleChange}
