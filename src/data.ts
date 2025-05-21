@@ -52,6 +52,7 @@ export const teamMembers = [
 
 export const filtersData = {
   age: [
+    { value: "Prefer not to say", label: "Prefer not to say" },
     { value: "0-18", label: "0-18" },
     { value: "19-25", label: "19-25" },
     { value: "26-35", label: "26-35" },
@@ -59,11 +60,13 @@ export const filtersData = {
     { value: "50+", label: "50+" },
   ],
   gender: [
+    { value: "Prefer not to say", label: "Prefer not to say" },
     { value: "Male", label: "Male" },
     { value: "Female", label: "Female" },
     { value: "Non-binary", label: "Non-binary" },
   ],
   race: [
+    { value: "Prefer not to say", label: "Prefer not to say" },
     { value: "White", label: "White" },
     { value: "Black", label: "Black" },
     { value: "Asian", label: "Asian" },
@@ -71,6 +74,7 @@ export const filtersData = {
     { value: "Middle Eastern", label: "Middle Eastern" },
   ],
   sexuality: [
+    { value: "Prefer not to say", label: "Prefer not to say" },
     { value: "Straight", label: "Straight" },
     { value: "Gay", label: "Gay" },
     { value: "Bisexual", label: "Bisexual" },
@@ -78,6 +82,7 @@ export const filtersData = {
     { value: "Asexual", label: "Asexual" },
   ],
   nationality: [
+    { value: "Prefer not to say", label: "Prefer not to say" },
     { value: "Afghan", label: "Afghan" },
     { value: "Albanian", label: "Albanian" },
     { value: "Algerian", label: "Algerian" },
