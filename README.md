@@ -6,14 +6,13 @@ google icons
 emailjs-com
 
 to do:
-repair to be more reusable: navbar, footer, TeamMemberSlider
+repair to be more reusable: navbar, footer, TeamMemberSlider, userStoryForm?
 add popping-star component to about page
 button to clear all the filters
 make sure that page refresh wont reset filters
 email templates!!!
-solution to the gender/race etc. dropdowns
+add margin to the filters in userStoryForm and change the placeholder to the name of question
 check every component that have matching its purpose description
-if user dont want to share their story change the send button or just let him send with the same button and additional writing
 update questions
 race to delete
 wyroznic their story w our stories
