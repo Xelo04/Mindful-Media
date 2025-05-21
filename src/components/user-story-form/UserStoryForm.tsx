@@ -112,6 +112,34 @@ const UserStoryForm = () => {
           required
           className="form-input"
         />
+        <h4>Any stories, messages for others you would like to add?</h4>
+        <input
+          name="story"
+          type="text"
+          placeholder="Your Answer"
+          required
+          className="form-input"
+        />
+        <FormDropdownInput
+          name="age"
+          options={filtersData.age}
+          onChange={setAgeValue}
+        />
+        <FormDropdownInput
+          name="gender"
+          options={filtersData.gender}
+          onChange={setGenderValue}
+        />
+        <FormDropdownInput
+          name="sexuality"
+          options={filtersData.sexuality}
+          onChange={setSexualityValue}
+        />
+        <FormDropdownInput
+          name="nationality"
+          options={filtersData.nationality}
+          onChange={setNationalityValue}
+        />
         <h4>
           Would you be interested in talking with us about your responses and
           telling us more about yourself?
@@ -133,34 +161,6 @@ const UserStoryForm = () => {
               placeholder="Your Email"
               required
               className="form-input"
-            />
-            <h4>Any stories, messages for others you would like to add?</h4>
-            <input
-              name="story"
-              type="text"
-              placeholder="Your Answer"
-              required
-              className="form-input"
-            />
-            <FormDropdownInput
-              name="age"
-              options={filtersData.age}
-              onChange={setAgeValue}
-            />
-            <FormDropdownInput
-              name="gender"
-              options={filtersData.gender}
-              onChange={setGenderValue}
-            />
-            <FormDropdownInput
-              name="sexuality"
-              options={filtersData.sexuality}
-              onChange={setSexualityValue}
-            />
-            <FormDropdownInput
-              name="nationality"
-              options={filtersData.nationality}
-              onChange={setNationalityValue}
             />
           </>
         )}
