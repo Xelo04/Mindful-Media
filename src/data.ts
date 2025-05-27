@@ -11,7 +11,7 @@ export const navbarData = [
   },
   {
     id: 3,
-    navigationTitle: "RESOURCES",
+    navigationTitle: "CONTACT",
     url: "/contact",
   },
   {
