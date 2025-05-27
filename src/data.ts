@@ -28,25 +28,34 @@ export const footerData = {
 export const teamMembers = [
   {
     id: 1,
-    name: "John",
-    surname: "Doe",
-    image: "team-members/member3.jpg",
+    name: "Ola",
+    surname: "Kawa",
+    image: "team-members/member1.jpg",
     description:
-      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede",
+      "Hi my name is Ola, I am a second year student at AMU in Poznań. Currently I am on Erasmus programme in Denmark. Everyone uses social media on a daily basis. Most of us don't even realise how much we are influenced by things that we see or read on various platforms. I believe that the bad side of social media is quite openly talked about, therefore we decided to focus on something different. We want to showcase that those platforms can have a good impact on one's mental health too.",
   },
   {
     id: 2,
-    name: "Jane",
-    surname: "Doe",
+    name: "Castro",
+    surname: "Okorie",
     image: "team-members/member2.jpg",
-    description: "Bla bla bla",
+    description:
+      "Hi everyone, I'm Castro, a Creative Business student at Hogeschool Utrecht, originally from Nigeria. I love working with people from diverse backgrounds. I’m passionate about creativity, travel, and meaningful conversations, and I enjoy connecting ideas and people through various projects. Outside of school, I'm involved in entrepreneurial and creative ventures that push me to grow and see the world differently. I believe everyone has something unique to teach, and that's why it's so important to build communities like this one.",
   },
   {
     id: 3,
-    name: "John",
-    surname: "Smith",
+    name: "Tomek",
+    surname: "Stróżyna",
     image: "team-members/member3.jpg",
-    description: "Bl bl bl",
+    description:
+      "Hi, I'm Tomek, and I study Management and Business Law at AMU in Poznań. I'm passionate about sports, reading - especially behavioral psychology and philosophy - and hiking in the mountains during summer. One quote I live by is from Marcus Aurelius: “The mind in itself has no needs... except those it creates itself”, which reminds me that we control our perceptions and reactions. Personally, I don't use any social media platforms, but I'm aware, how much of an influence they have on my generation.",
+  },
+  {
+    id: 4,
+    name: "Sandra",
+    surname: "Dmowska",
+    image: "team-members/member4.jpg",
+    description: "",
   },
 ];
 

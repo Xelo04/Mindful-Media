@@ -1,3 +1,4 @@
+import PoppingStar from "../../components/popping-star/PoppingStar";
 import TeamMemberSlider from "../../components/team-member-slider/TeamMemberSlider";
 import "./about.scss";
 
@@ -6,6 +7,7 @@ const About = () => {
     <div className="about">
       <section className="title-container">
         <div className="title">
+          <PoppingStar />
           <span className="ballet-font">#Mindful</span>
           <span className="oranienbaum-font">MEDIA</span>
         </div>
@@ -15,13 +17,21 @@ const About = () => {
         <h2>ABOUT US</h2>
         <div className="about-us-container">
           <div className="description">
-            <h3>SHORT PROJECT SUMMARY</h3>
+            <h3>OUR MISSION</h3>
             <p>
-              We are a team of passionate individuals dedicated to creating
-              meaningful and impactful media content. Our mission is to inspire,
-              educate, and entertain through our work. We believe in the power
-              of storytelling and its ability to connect people from all walks
-              of life.
+              In today’s digital age, social media plays a powerful role in
+              shaping mental health narratives. While much attention is given to
+              its risks, our campaign #MindfulMedia - shifts focus to the
+              positive impact social platforms can have on emotional well-being,
+              community support, and self-expression. We aim to highlight how
+              mindful engagement with social media can foster meaningful
+              connection, encourage free self-expression, and provide emotional
+              support through digital communities. By reframing the
+              conversation, we advocate for a more balanced perspective that
+              recognizes the potential of social media to actively support
+              positive mental health outcomes when used intentionally and
+              responsibly. Here you can find a lot of inspiring stories and you
+              can share your own.
             </p>
           </div>
           <img src="logo.png" alt="logo" />
