@@ -55,7 +55,8 @@ export const teamMembers = [
     name: "Sandra",
     surname: "Dmowska",
     image: "team-members/member4.jpg",
-    description: "",
+    description:
+      "Hi! I'm Sandra, and I study Management and Business Law and Finance, Audit, Investments. My main interests are: playing volleyball, cuddling with my cat and playing board/card/computer games with my family and friends. I'm chronically online, I'm fighting with my addiction, but at the same time I can name multiple ways how social media helped me at my lowest. That's why this project is close to my heart.",
   },
 ];
 
