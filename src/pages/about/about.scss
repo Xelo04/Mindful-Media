@@ -17,31 +17,106 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      font-size: 8rem;
+      font-size: 8em;
       color: constants.$white-color;
       padding-bottom: 70px;
       .ballet-font {
         font-family: "Ballet", cursive;
-        margin-bottom: -4.87rem;
+        margin-bottom: -0.62em;
       }
       .oranienbaum-font {
         font-family: "Oranienbaum", serif;
-        font-size: 10rem;
+        font-size: 1.2em;
       }
     }
-    .star1 {
+    .star {
       position: absolute;
-      top: 20%;
-      left: 10%;
       width: 100%;
       height: 100%;
     }
-    .star2 {
-      position: absolute;
+    #star1 {
+      top: 13%;
+      left: 6%;
+    }
+    #star2 {
+      top: 9%;
+      left: 22%;
+    }
+    #star3 {
+      top: 22%;
+      left: 16%;
+    }
+    #star4 {
+      top: 32%;
+      left: 30%;
+    }
+    #star5 {
+      top: 31%;
+      left: 10%;
+    }
+    #star6 {
       top: 10%;
-      left: 3%;
-      width: 100%;
-      height: 100%;
+      left: 14%;
+    }
+    #star7 {
+      top: 28%;
+      left: 5%;
+    }
+    #star8 {
+      top: 26%;
+      left: 20%;
+    }
+    #star9 {
+      top: 41%;
+      left: 24%;
+    }
+    #star10 {
+      top: 25%;
+      left: 28%;
+    }
+    #star11 {
+      top: 12%;
+      left: 33%;
+    }
+    #star12 {
+      top: 13%;
+      left: 89%;
+    }
+    #star13 {
+      top: 9%;
+      left: 73%;
+    }
+    #star14 {
+      top: 22%;
+      left: 83%;
+    }
+    #star15 {
+      top: 32%;
+      left: 65%;
+    }
+    #star16 {
+      top: 31%;
+      left: 82%;
+    }
+    #star17 {
+      top: 10%;
+      left: 85%;
+    }
+    #star18 {
+      top: 28%;
+      left: 90%;
+    }
+    #star19 {
+      top: 26%;
+      left: 76%;
+    }
+    #star20 {
+      top: 41%;
+      left: 73%;
+    }
+    #star21 {
+      top: 23%;
+      left: 70%;
     }
   }
 

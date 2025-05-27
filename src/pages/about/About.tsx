@@ -6,11 +6,68 @@ const About = () => {
   return (
     <div className="about">
       <section className="title-container">
-        <div className="star1">
+        <div className="star" id="star1">
           <PoppingStar width={100} height={100} delayPercent={50} />
         </div>
-        <div className="star2">
-          <PoppingStar />
+        <div className="star" id="star2">
+          <PoppingStar width={120} height={120} delayPercent={60} />
+        </div>
+        <div className="star" id="star3">
+          <PoppingStar width={40} height={40} />
+        </div>
+        <div className="star" id="star4">
+          <PoppingStar width={80} height={80} delayPercent={80} />
+        </div>
+        <div className="star" id="star5">
+          <PoppingStar width={140} height={140} delayPercent={70} />
+        </div>
+        <div className="star" id="star6">
+          <PoppingStar width={50} height={50} delayPercent={50} />
+        </div>
+        <div className="star" id="star7">
+          <PoppingStar width={40} height={40} delayPercent={20} />
+        </div>
+        <div className="star" id="star8">
+          <PoppingStar width={80} height={80} delayPercent={40} />
+        </div>
+        <div className="star" id="star9">
+          <PoppingStar width={40} height={40} />
+        </div>
+        <div className="star" id="star10">
+          <PoppingStar width={40} height={40} delayPercent={30} />
+        </div>
+        <div className="star" id="star11">
+          <PoppingStar width={60} height={60} delayPercent={70} />
+        </div>
+        <div className="star" id="star12">
+          <PoppingStar width={100} height={100} delayPercent={50} />
+        </div>
+        <div className="star" id="star13">
+          <PoppingStar width={120} height={120} delayPercent={60} />
+        </div>
+        <div className="star" id="star14">
+          <PoppingStar width={40} height={40} />
+        </div>
+        <div className="star" id="star15">
+          <PoppingStar width={80} height={80} delayPercent={80} />
+        </div>
+        <div className="star" id="star16">
+          <PoppingStar width={140} height={140} delayPercent={90} />
+        </div>
+        <div className="star" id="star17">
+          <PoppingStar width={50} height={50} delayPercent={40} />
+        </div>
+        <div className="star" id="star18">
+          <PoppingStar width={40} height={40} delayPercent={20} />
+        </div>
+        <div className="star" id="star19">
+          <PoppingStar width={80} height={80} delayPercent={40} />
+        </div>
+        <div className="star" id="star20">
+          <PoppingStar width={40} height={40} />
+        </div>
+        <div className="star" id="star21">
+          <PoppingStar width={40} height={40} delayPercent={30} />
         </div>
         <div className="title">
           <span className="ballet-font">#Mindful</span>
