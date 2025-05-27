@@ -26,7 +26,10 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 5px;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
+      }
+      .short-description-title {
+        font-weight: bold;
       }
       .short-description {
         margin-top: 5px;
@@ -56,6 +59,7 @@
         .title {
           text-align: center;
           padding-bottom: 5px;
+          font-weight: bold;
         }
       }
 

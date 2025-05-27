@@ -111,7 +111,7 @@ const FilteredStories = ({
                 <p>NATIONALITY</p>
                 <p>{story.nationality}</p>
               </div>
-              <p>Their short message</p>
+              <p className="short-description-title">Short message:</p>
               <p className="short-description">{story.shortDescription}</p>
               <div
                 className={`long-description${
