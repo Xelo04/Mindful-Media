@@ -6,8 +6,8 @@ const About = () => {
     <div className="about">
       <section className="title-container">
         <div className="title">
-          <span>#Mindful</span>
-          <span>Media</span>
+          <span className="ballet-font">#Mindful</span>
+          <span className="oranienbaum-font">MEDIA</span>
         </div>
       </section>
 
