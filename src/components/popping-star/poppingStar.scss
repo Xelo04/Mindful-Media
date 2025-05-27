@@ -1,11 +1,33 @@
-.star {
-  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
-  transform: scale(1);
-  opacity: 1;
+.pop-star-wrapper {
+  display: inline-block;
+  overflow: visible;
 }
 
-.star.pop {
-  filter: invert(100%) brightness(100%) contrast(100%);
-  transform: scale(1.6);
-  opacity: 0;
+.looping-pop {
+  animation: starPopLoop 1.5s ease-in-out infinite;
+  transform-origin: center center;
+  display: block;
+}
+
+@keyframes starPopLoop {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  25% {
+    transform: scale(1.4);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  75% {
+    transform: scale(0.6);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
 }

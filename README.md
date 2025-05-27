@@ -14,5 +14,4 @@ email templates!!!
 add margin to the filters in userStoryForm and change the placeholder to the name of question
 check every component that have matching its purpose description
 update questions
-race to delete
 wyroznic their story w our stories

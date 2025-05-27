@@ -6,8 +6,13 @@ const About = () => {
   return (
     <div className="about">
       <section className="title-container">
-        <div className="title">
+        <div className="star1">
+          <PoppingStar width={100} height={100} delayPercent={50} />
+        </div>
+        <div className="star2">
           <PoppingStar />
+        </div>
+        <div className="title">
           <span className="ballet-font">#Mindful</span>
           <span className="oranienbaum-font">MEDIA</span>
         </div>

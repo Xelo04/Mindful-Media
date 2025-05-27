@@ -1,34 +1,20 @@
-import React, { useEffect, useState } from "react";
 import "./poppingStar.scss";
 
-interface PoppingStarProps {
-  width?: number;
-  height?: number;
-}
+const ANIMATION_DURATION = 1.5; // sekundy
 
-const PoppingStar: React.FC<PoppingStarProps> = ({
-  width = 100,
-  height = 100,
-}) => {
-  const [pop, setPop] = useState(false);
+const PoppingStar = ({ width = 50, height = 50, delayPercent = 0 }) => {
+  const delaySeconds = (delayPercent / 100) * ANIMATION_DURATION;
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setPop(true);
-      setTimeout(() => setPop(false), 500);
-    }, 1500);
-
-    return () => clearInterval(interval);
-  }, []);
+  const style = {
+    width,
+    height,
+    animationDelay: `${delaySeconds}s`,
+  };
 
   return (
-    <img
-      src="star.svg"
-      alt="star"
-      className={`star ${pop ? "pop" : ""}`}
-      width={width}
-      height={height}
-    />
+    <div className="pop-star-wrapper" style={{ width, height }}>
+      <img src="/star.svg" alt="star" className="looping-pop" style={style} />
+    </div>
   );
 };
 
