@@ -8,7 +8,6 @@ interface Story {
   id: number;
   age: string;
   gender: string;
-  race: string;
   sexuality: string;
   nationality: string;
   shortDescription: string;
@@ -30,7 +29,6 @@ const FilteredStories = ({
     id: null,
     age: null,
     gender: null,
-    race: null,
     sexuality: null,
     nationality: null,
     shortDescription: null,
@@ -112,8 +110,6 @@ const FilteredStories = ({
                 <p>{story.gender}</p>
                 <p>NATIONALITY</p>
                 <p>{story.nationality}</p>
-                <p>RACE</p>
-                <p>{story.race}</p>
               </div>
               <p>Their short message</p>
               <p className="short-description">{story.shortDescription}</p>
