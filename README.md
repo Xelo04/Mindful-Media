@@ -13,3 +13,4 @@ email templates!!!
 add margin to the filters in userStoryForm and change the placeholder to the name of question
 check every component that have matching its purpose description
 update questions
+make sure that footer will be always on bottom
