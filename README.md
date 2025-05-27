@@ -7,10 +7,7 @@ emailjs-com
 
 to do:
 repair to be more reusable: navbar, footer, TeamMemberSlider, userStoryForm?
-button to clear all the filters
 make sure that page refresh wont reset filters
 email templates!!!
-add margin to the filters in userStoryForm and change the placeholder to the name of question
 check every component that have matching its purpose description
-update questions
 make sure that footer will be always on bottom
