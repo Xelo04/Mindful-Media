@@ -54,7 +54,7 @@ const UserStoryForm = () => {
   return (
     <div className="userStoryForm">
       <form ref={formRef} onSubmit={sendEmail}>
-        <h4>How much time do you spend on social media on daily basis?</h4>
+        <h4>How much time do you spend on social media on a daily basis?</h4>
         <FormDropdownInput
           name="extraQuestion"
           options={extraQuestion}
@@ -69,8 +69,8 @@ const UserStoryForm = () => {
           className="form-input"
         />
         <h4>
-          Do you feel safer sharing your thoughts/emotions online than IRL?
-          Please explain.
+          Do you feel safer sharing your thoughts/emotions online than in real
+          life? Please elaborate.
         </h4>
         <input
           name="question2"
@@ -81,7 +81,7 @@ const UserStoryForm = () => {
         />
         <h4>
           Do you feel more connected with your friends because of social media?
-          Please explain.
+          Please elaborate.
         </h4>
         <input
           name="question3"
@@ -92,7 +92,7 @@ const UserStoryForm = () => {
         />
         <h4>
           Have social media ever helped you go through any difficulties? Please
-          explain.
+          elaborate.
         </h4>
         <input
           name="question4"
@@ -103,7 +103,7 @@ const UserStoryForm = () => {
         />
         <h4>
           Have you found any communities or groups on social media that made you
-          feel supported or understood? Please explain.
+          feel supported or understood? Please elaborate.
         </h4>
         <input
           name="question5"
@@ -120,21 +120,25 @@ const UserStoryForm = () => {
           required
           className="form-input"
         />
+        <h4>What's your age?</h4>
         <FormDropdownInput
           name="age"
           options={filtersData.age}
           onChange={setAgeValue}
         />
+        <h4>What's your gender?</h4>
         <FormDropdownInput
           name="gender"
           options={filtersData.gender}
           onChange={setGenderValue}
         />
+        <h4>What's your sexuality?</h4>
         <FormDropdownInput
           name="sexuality"
           options={filtersData.sexuality}
           onChange={setSexualityValue}
         />
+        <h4>What's your nationality?</h4>
         <FormDropdownInput
           name="nationality"
           options={filtersData.nationality}
