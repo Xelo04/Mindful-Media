@@ -71,8 +71,8 @@ export const filtersData = {
   ],
   gender: [
     { value: "Prefer not to say", label: "Prefer not to say" },
-    { value: "Male", label: "Male" },
-    { value: "Female", label: "Female" },
+    { value: "Man", label: "Man" },
+    { value: "Woman", label: "Woman" },
     { value: "Non-binary", label: "Non-binary" },
   ],
   sexuality: [
