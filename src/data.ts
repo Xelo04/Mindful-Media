@@ -287,202 +287,58 @@ export const filtersData = {
 export const storiesData = [
   {
     id: 1,
-    age: "26-35",
-    gender: "Female",
-    sexuality: "Bisexual",
-    nationality: "Afghan",
-    shortDescription: "Freelance graphic designer from Tokyo.",
+    age: "15-18",
+    gender: "Men",
+    sexuality: "Heterosexual",
+    nationality: "Prefer not to say",
+    shortDescription: "To some degree, social media saved my life",
     longDescription:
-      "Aiko is a creative professional who specializes in branding and digital illustration. She enjoys traveling, minimalist design, and often volunteers for local art education programs in Japan.",
+      "I was ready to end it all, I even planned on how to do it, how do get there etc. I had been ready for quite some time. Fortunately, it was pouring rain that night and I hadn’t gotten my drivers license yet so I decided to stay in bed one more day. I added some random girl on Snapchat and we’ve messaged the whole night, literally for like 10h straight. I listened as she talked shit about her parents and sport she was playing. I don’t remember almost anything from the whole conversation, it wasn’t really meaningful. She wasn’t even from my country, we had 8h time difference I believe, so she eventually said goodbye and went to sleep. We’ve never talked again. But next day I didn’t’ fell the need to kms anymore. I mean I was still severely depressed, probably should have been hospitalised by then, but somehow I got through. Shortly after that, I started following an account of a woman whose husband had failed a suicide attempt and was left paralysed with almost no brain activity left. This really shocked me, because I know, that it could have been me. And I know, it might be a little insincere, but I hated him for his selfishness. Now I know, that it’s not really selfishness, but I’d rather not share my thoughts on that topic here. But when I was watching the wife struggling everyday (she has become the man’s main caretaker and was drowning in medical bills bc welcome in America ofc). And I hated the idea of becoming such a burden for anybody. And the idea of being trapped in my body, loosing my mind. It scared the shit out of me. Later, I’ve started to feel shame, for allowing myself to even consider the possibility. Since then I’m still struggling with depression, some periods are better than others, but I haven’t gotten suicidal thoughts not once. I still sometimes wonder, whether the girl  I’ve talked to that night knows, that she probably saved my life. It’s funny how in her life I was just a meaningless guy, but she changed everything for me, but I guess these are the wonders of social media. Btw, as far as I know, the wife from the man remarried and the man is in some sort of nursing home, but they visit him regularly and care for him and seem quite happy :)",
   },
+
   {
     id: 2,
-    age: "36-50",
-    gender: "Male",
-    sexuality: "Straight",
-    nationality: "American",
-    shortDescription: "High school history teacher and father of two.",
+    age: "19-22",
+    gender: "Non-binary",
+    sexuality: "Asexual",
+    nationality: "Polish",
+    shortDescription:
+      "If you have the knowledge on safe usage of social media, you can definitely make them a tool that will benefit you",
     longDescription:
-      "Marcus has been teaching for over 15 years and is passionate about making history accessible and engaging for all students. Outside of school, he coaches youth basketball and writes historical fiction.",
+      "I use social media for over 3 hours on a daily basis. I like how I can be true myself there. I found multiple wonderful friends online, they really helped me through the tough times. I think, it’s really important to have someone you can relate to – who has similar believes, values, interests to you. Someone that’s in a similar situation or have been going through, what you are going through right now. Especially when you’re just a teenager, that feels lonely and misunderstood even in a room full of people. Finding someone you can be on the same wavelength with gets easier with internet – social media platforms give us access to unlimited resources of people. But it’s not an easy task. Social media platforms are dangerous places, full of hatred and weirdos.",
   },
+
   {
     id: 3,
-    age: "26-35",
-    gender: "Non-binary",
+    age: "19-22",
+    gender: "Woman",
     sexuality: "Pansexual",
-    nationality: "Canadian",
-    shortDescription: "Tech entrepreneur and startup mentor.",
+    nationality: "Polish",
+    shortDescription: "Social media helped me to develop my identity",
     longDescription:
-      "Jordan founded their first company at age 23 and now works as a mentor for tech startups in Vancouver. They advocate for inclusive innovation and enjoy hiking in British Columbia's forests.",
+      'I can say a lot of bad things about social media, but one thing is undeniable – shorten media broadens mind. I’m not proud of this, but when I was little, I used to be quite conservative, I was kinda homophobic, kinda racist, huge pick me girl. In 2020 (peak of pandemic) I started to use social media a lot, especially Tiktok. I could spend half a day on it, just scrolling brainlessly. Because of that, lots of different content started appearing on my For You Page and with time it got more and more progressive. Now I’m as far “left” as a reasonable human can get. That’s because as I started watching content that was out of my comfort zone, not in my perspective, and as I started listening to multiple amazing creators on there, I started to understand their point of view. With some things, I just decided, that their reasoning made more sense than my own. I’ve gained a lot of empathy and knowledge. With a lot of things I was indifferent beforehand, but now I stand for them with my whole heart. With few things I discovered new possibilities. For example when it comes to my sexuality, social media showed me that not being cis is normal and it’s okay. Then I realized, that most of female characters from movies, that I was so obsessed with were actually my first crushes (shout-out to Vanessa from Phineas and Ferb and Alex Russo from Wizard of Waverly Place"). Well, to sum up a little, do I think, that social media wasted a lot of my time and potential? Yes. But I also know, that I wouldn’t be, who I am today if it weren’t for the broad perspectives from Tiktok, to be honest, I’d probably still be unknowingly in the closet.',
   },
+
   {
     id: 4,
-    age: "19-25",
-    gender: "Male",
-    sexuality: "Gay",
-    nationality: "Mexican",
-    shortDescription: "Aspiring actor with a passion for musical theatre.",
+    age: "19-22",
+    gender: "Women",
+    sexuality: "Prefer not to say",
+    nationality: "Polish",
+    shortDescription:
+      " It’s easier to stay connected with people with help of social media ",
     longDescription:
-      "Diego moved to Mexico City to pursue his acting career and has performed in several local productions. He's a classically trained singer and hopes to one day appear on Broadway.",
+      "I have moved to another city so social media and sharing contents we share interests in helps us keep in touch and sparks conversation. Social media helps me and my friends, living both far and close, discover our shared interests and find new topics to discuss which often leads to further conversation. I think social media helped me a lot during covid lockdown, I got to keep up with others and their lives. As everyone found themselves in a similar situation, I've found a lot of motivation and goals because of others and got really immersed in my interests (which sounds like it's pretty separate from social medias but it's really not lol). I have found myself in a really supportive and wholesome community of fans of a music group that makes it their mission to help others. Both the groups message and the fans amongst which I found myself provided a lot of (indirect, because I don't like getting involved in social interactions support and understanding.",
   },
+
   {
     id: 5,
-    age: "26-35",
-    gender: "Female",
-    sexuality: "Asexual",
-    nationality: "Egyptian",
-    shortDescription: "Software engineer and open-source contributor.",
+    age: "19-22",
+    gender: "Woman",
+    sexuality: "Prefer not to say",
+    nationality: "Prefer not to say",
+    shortDescription: "Social media helped me overcome my ed",
     longDescription:
-      "Leila specializes in backend development and is an advocate for women in STEM. She contributes to open-source projects and runs a mentorship program for young girls interested in coding in Cairo.",
-  },
-  {
-    id: 6,
-    age: "0-18",
-    gender: "Non-binary",
-    sexuality: "Pansexual",
-    nationality: "Mexican",
-    shortDescription: "High school student and robotics enthusiast.",
-    longDescription:
-      "Alexis is part of their school’s robotics team in Guadalajara. They enjoy coding in Python and dream of becoming a mechatronics engineer. They often volunteer at local STEM workshops for children.",
-  },
-  {
-    id: 7,
-    age: "50+",
-    gender: "Male",
-    sexuality: "Straight",
-    nationality: "Canadian",
-    shortDescription: "Retired firefighter turned nature photographer.",
-    longDescription:
-      "Robert spent 30 years serving his community in Alberta. Now retired, he travels across Canada capturing wildlife with his camera and advocates for forest conservation.",
-  },
-  {
-    id: 8,
-    age: "19-25",
-    gender: "Female",
-    sexuality: "Gay",
-    nationality: "Japanese",
-    shortDescription: "University student studying marine biology.",
-    longDescription:
-      "Miyu is passionate about ocean conservation and spends her summers researching coral reefs in Okinawa. She's active in campus LGBTQ+ advocacy and enjoys scuba diving.",
-  },
-  {
-    id: 9,
-    age: "36-50",
-    gender: "Non-binary",
-    sexuality: "Asexual",
-    nationality: "Egyptian",
-    shortDescription: "Librarian and historical archivist in Alexandria.",
-    longDescription:
-      "Samir works to digitize rare manuscripts and promote access to public knowledge. They organize educational events on Egypt’s cultural heritage and enjoy quiet evenings reading poetry.",
-  },
-  {
-    id: 10,
-    age: "0-18",
-    gender: "Female",
-    sexuality: "Straight",
-    nationality: "American",
-    shortDescription: "Aspiring pianist and youth activist.",
-    longDescription:
-      "Tiana, a 17-year-old from Atlanta, balances schoolwork with music and social justice projects. She's performed at community events and dreams of attending a conservatory in New York.",
-  },
-  {
-    id: 11,
-    age: "19-25",
-    gender: "Male",
-    sexuality: "Bisexual",
-    nationality: "Canadian",
-    shortDescription: "Engineering student and hockey player.",
-    longDescription:
-      "Liam studies mechanical engineering in Toronto and plays defense on his university's hockey team. He's also part of an LGBTQ+ inclusion initiative for student athletes.",
-  },
-  {
-    id: 12,
-    age: "50+",
-    gender: "Female",
-    sexuality: "Straight",
-    nationality: "Mexican",
-    shortDescription: "Retired chef and community gardener.",
-    longDescription:
-      "Maria spent over 40 years working in restaurants across Mexico. Now, she teaches cooking classes and maintains a garden that provides fresh produce to local families.",
-  },
-  {
-    id: 13,
-    age: "36-50",
-    gender: "Female",
-    sexuality: "Gay",
-    nationality: "Japanese",
-    shortDescription: "Architect passionate about sustainable design.",
-    longDescription:
-      "Yumi specializes in eco-friendly architecture and has led several projects promoting green buildings in Osaka. She also mentors young women entering the field.",
-  },
-  {
-    id: 14,
-    age: "26-35",
-    gender: "Male",
-    sexuality: "Pansexual",
-    nationality: "Egyptian",
-    shortDescription: "Documentary filmmaker focused on human rights.",
-    longDescription:
-      "Omar travels the Middle East to film stories on education and migration. His work has been featured at international festivals and aims to amplify marginalized voices.",
-  },
-  {
-    id: 15,
-    age: "0-18",
-    gender: "Female",
-    sexuality: "Asexual",
-    nationality: "American",
-    shortDescription: "Young poet with a love for astronomy.",
-    longDescription:
-      "Sophie is a high school student in Vermont who writes poetry about stars and science. She's won several youth writing contests and aspires to become an astrophysicist.",
-  },
-  {
-    id: 16,
-    age: "26-35",
-    gender: "Non-binary",
-    sexuality: "Bisexual",
-    nationality: "Canadian",
-    shortDescription: "Community organizer and spoken word artist.",
-    longDescription:
-      "Toni works with youth in Toronto to promote civic engagement and artistic expression. They host regular open mic nights and are active in anti-racism education.",
-  },
-  {
-    id: 17,
-    age: "19-25",
-    gender: "Female",
-    sexuality: "Straight",
-    nationality: "Egyptian",
-    shortDescription: "Medical student passionate about women's health.",
-    longDescription:
-      "Fatima is studying medicine in Cairo and volunteers at clinics focused on maternal care. She hopes to become a gynecologist serving underserved communities.",
-  },
-  {
-    id: 18,
-    age: "50+",
-    gender: "Non-binary",
-    sexuality: "Gay",
-    nationality: "Japanese",
-    shortDescription: "Retired professor and tea ceremony instructor.",
-    longDescription:
-      "Kenta taught philosophy at a Tokyo university and now teaches traditional tea ceremony. They advocate for elder LGBTQ+ representation in cultural spaces.",
-  },
-  {
-    id: 19,
-    age: "0-18",
-    gender: "Male",
-    sexuality: "Straight",
-    nationality: "American",
-    shortDescription: "Middle school chess champion.",
-    longDescription:
-      "Jamari is a 13-year-old prodigy from Chicago who has won state-level chess tournaments. He's working on a YouTube channel to teach chess to other kids in his neighborhood.",
-  },
-  {
-    id: 20,
-    age: "36-50",
-    gender: "Male",
-    sexuality: "Asexual",
-    nationality: "Canadian",
-    shortDescription: "IT consultant and amateur musician.",
-    longDescription:
-      "Daniel works remotely from Montreal and spends his evenings composing instrumental music. He's part of an asexual advocacy group focused on workplace inclusivity.",
+      "During the pandemic, I developed severe problems with eating; I fell into an eating disorder and was able to survive on just water and apples for an entire week. I didn’t seek help because I didn’t see it as a problem, and due to the pandemic isolation, there weren’t really any opportunities for my environment to notice what was happening to me. The greatest help turned out to be a girl on TikTok who shared content about her journey with an eating disorder – she was going through recovery for a long time, and I followed her all throughout that period. Thanks to that, I became interested in the topic and, honestly, I recognized my own problem. I think that if it weren’t for that girl on TikTok, I might never have brought this topic up with anyone else for a very long time. I’m mostly sharing my emotions through social media, it’s easier to not be face to face with someone you’re telling some deep truth or story. The emotions i share in real life is only with my true loved ones who I can trust. Social media was some kind of my own diary by the time I was going through some deep deep things such as depression or stress, it really helped me to express myself",
   },
 ];
