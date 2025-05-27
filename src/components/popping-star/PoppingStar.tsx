@@ -1,7 +1,15 @@
 import React, { useEffect, useState } from "react";
 import "./poppingStar.scss";
 
-const PoppingStar: React.FC = () => {
+interface PoppingStarProps {
+  width?: number;
+  height?: number;
+}
+
+const PoppingStar: React.FC<PoppingStarProps> = ({
+  width = 100,
+  height = 100,
+}) => {
   const [pop, setPop] = useState(false);
 
   useEffect(() => {
@@ -18,8 +26,8 @@ const PoppingStar: React.FC = () => {
       src="star.svg"
       alt="star"
       className={`star ${pop ? "pop" : ""}`}
-      width={100}
-      height={100}
+      width={width}
+      height={height}
     />
   );
 };
