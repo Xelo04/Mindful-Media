@@ -63,8 +63,10 @@ export const teamMembers = [
 export const filtersData = {
   age: [
     { value: "Prefer not to say", label: "Prefer not to say" },
-    { value: "0-18", label: "0-18" },
-    { value: "19-25", label: "19-25" },
+    { value: "0-14", label: "0-14" },
+    { value: "15-18", label: "15-18" },
+    { value: "19-22", label: "19-22" },
+    { value: "23-25", label: "23-25" },
     { value: "26-35", label: "26-35" },
     { value: "36-50", label: "36-50" },
     { value: "50+", label: "50+" },
