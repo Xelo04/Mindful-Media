@@ -77,8 +77,8 @@ export const filtersData = {
   ],
   sexuality: [
     { value: "Prefer not to say", label: "Prefer not to say" },
-    { value: "Straight", label: "Straight" },
-    { value: "Gay", label: "Gay" },
+    { value: "Heterosexual", label: "Heterosexual" },
+    { value: "Homosexual", label: "Homosexual" },
     { value: "Bisexual", label: "Bisexual" },
     { value: "Pansexual", label: "Pansexual" },
     { value: "Asexual", label: "Asexual" },
