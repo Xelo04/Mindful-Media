@@ -124,6 +124,7 @@
   // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ About Us ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   .about-us {
     padding-bottom: 40px;
+    border-bottom: 2px solid constants.$black-color;
 
     .about-us-container {
       padding: 30px 10% 0px 10%;
@@ -150,11 +151,12 @@
   .tabbed-panel {
     background: constants.$soft-bg;
     color: constants.$white-color;
-    border-block: 2px solid constants.$black-color;
     padding: 40px;
   }
+
   // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Meet Us ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   .meet-us {
+    border-top: 2px solid constants.$black-color;
     h2 {
       padding-block: 20px;
     }

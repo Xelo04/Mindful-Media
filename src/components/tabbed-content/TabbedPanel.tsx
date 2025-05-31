@@ -16,6 +16,9 @@ const TabbedPanel: React.FC<TabbedPanelProps> = ({ tabs }) => {
 
   return (
     <div className="tabbed-panel">
+      <div className="title">
+        <span>REAL LIFE EXAMPLES</span>
+      </div>
       <div className="tab-buttons">
         {tabs.map((tab, index) => (
           <button

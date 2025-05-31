@@ -144,7 +144,9 @@ const About = () => {
       </section>
 
       <section className="tabbed-panel">
-        <TabbedPanel tabs={tabs} />
+        <div className="tabbed-panel-content">
+          <TabbedPanel tabs={tabs} />
+        </div>
       </section>
 
       <section className="meet-us">
