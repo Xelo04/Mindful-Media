@@ -84,11 +84,19 @@
       color: constants.$soft-bg;
       .material-icons {
         font-size: 50px;
+        &:hover {
+          opacity: 0.7;
+        }
       }
     }
     .arrow:disabled {
       cursor: default;
       color: #ccc;
+      .material-icons {
+        &:hover {
+          opacity: 1 !important;
+        }
+      }
     }
     .pages {
       display: flex;

@@ -16,6 +16,9 @@
     .material-icons {
       font-size: 130px;
       color: constants.$middle-bg;
+      &:hover {
+        opacity: 0.7;
+      }
     }
   }
   .team-member-image {
