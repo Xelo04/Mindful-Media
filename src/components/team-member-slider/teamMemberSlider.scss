@@ -3,13 +3,13 @@
 .team-member-slider {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   padding-inline: 0px;
   padding-block: 40px;
-  width: 100%;
+  width: 80%;
   button {
-    width: 13%;
+    width: 15%;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -19,7 +19,7 @@
     }
   }
   .team-member-image {
-    width: 34%;
+    width: 15%;
     height: auto;
     border-radius: 50%;
     border: 2px solid constants.$middle-bg;
@@ -28,7 +28,7 @@
   }
   .team-member-info {
     width: 40%;
-    padding-left: 30px;
+    padding-left: 5%;
     text-align: justify;
   }
 }

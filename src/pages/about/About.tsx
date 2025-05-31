@@ -140,7 +140,9 @@ const About = () => {
 
       <section className="meet-us">
         <h2>MEET US</h2>
-        <TeamMemberSlider />
+        <div className="team-member-slider">
+          <TeamMemberSlider />
+        </div>
       </section>
     </div>
   );
