@@ -2,6 +2,9 @@
 
 .tabbed-panel {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   .title {
     font-size: 3em;
     font-weight: bold;
@@ -22,15 +25,38 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      margin-inline: 3%;
+      margin-inline: 15%;
       height: auto;
       padding: 20px;
       cursor: pointer;
-      min-width: 120px;
+      min-width: 130px;
       .material-icons {
         font-size: 3.6em;
         margin-bottom: 5px;
       }
+    }
+  }
+  .tab-content {
+    margin-top: 40px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: constants.$light-bg;
+    color: constants.$black-color;
+    padding-block: 20px;
+    padding-inline: 5%;
+    border: none;
+    border-radius: 20px;
+    .title {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 1.4;
+      margin-top: 25px;
     }
   }
 }

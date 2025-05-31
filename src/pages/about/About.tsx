@@ -15,9 +15,24 @@ const About = () => {
         </>
       ),
       content: (
-        <div className="bg-red-100 p-4 rounded shadow">
-          <h2 className="text-xl font-bold">Content for Tab 1</h2>
-          <p>Custom layout and elements for the first tab.</p>
+        <div className="content-container">
+          <span className="title">Building community</span>
+          <p>
+            Building a community through social media - whether online or in
+            real life - can have a powerful, positive impact on mental health.
+            It allows people to connect with others who share similar interests,
+            hobbies, values, or experiences, creating a sense of belonging and
+            support. These digital spaces can provide a platform for open
+            conversations about mental health, reducing stigma and encouraging
+            people to seek help when needed. Social media also makes it easier
+            to maintain long-distance relationships or find niche communities
+            that might not exist locally. When used mindfully, these connections
+            can reduce feelings of isolation and loneliness. Engaging with a
+            positive and encouraging community can boost self-esteem and provide
+            emotional validation. Over time, these supportive interactions can
+            foster resilience and a greater sense of well-being.
+          </p>
+          div.
         </div>
       ),
     },

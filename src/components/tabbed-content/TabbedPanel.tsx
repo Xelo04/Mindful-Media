@@ -11,7 +11,7 @@ interface TabbedPanelProps {
   tabs: TabInfo[];
 }
 
-const TabbedPanel: React.FC<TabbedPanelProps> = ({ tabs }) => {
+const TabbedPanel = ({ tabs }: TabbedPanelProps) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
