@@ -17,6 +17,7 @@
       background: constants.$middle-bg;
       color: constants.$white-color;
       border: none;
+      border-radius: 20px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -24,6 +25,12 @@
       margin-inline: 3%;
       height: auto;
       padding: 20px;
+      cursor: pointer;
+      min-width: 120px;
+      .material-icons {
+        font-size: 3.6em;
+        margin-bottom: 5px;
+      }
     }
   }
 }

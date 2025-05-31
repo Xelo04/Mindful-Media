@@ -3,7 +3,7 @@ import "./TabbedPanel.scss"; // Create this file for styles
 
 interface TabInfo {
   iconName: string;
-  label: string;
+  label: React.ReactNode;
   content: React.ReactNode;
 }
 
@@ -28,7 +28,7 @@ const TabbedPanel: React.FC<TabbedPanelProps> = ({ tabs }) => {
             className={`tab-btn${index === activeIndex ? " active" : ""}`}
           >
             <span className="material-icons">{tab.iconName}</span>
-            <span className="btn-label">{tab.label}</span>
+            <span>{tab.label}</span>
           </button>
         ))}
       </div>

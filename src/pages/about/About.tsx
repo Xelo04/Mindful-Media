@@ -7,7 +7,13 @@ const About = () => {
   const tabs = [
     {
       iconName: "handshake",
-      label: "Building Community",
+      label: (
+        <>
+          Building
+          <br />
+          Community
+        </>
+      ),
       content: (
         <div className="bg-red-100 p-4 rounded shadow">
           <h2 className="text-xl font-bold">Content for Tab 1</h2>
@@ -17,7 +23,13 @@ const About = () => {
     },
     {
       iconName: "person",
-      label: "Making Connections",
+      label: (
+        <>
+          Making
+          <br />
+          Connections
+        </>
+      ),
       content: (
         <div className="bg-green-100 p-4 rounded shadow">
           <h2 className="text-xl font-bold">Content for Tab 2</h2>
@@ -27,7 +39,13 @@ const About = () => {
     },
     {
       iconName: "settings",
-      label: "Learning about Mental Health",
+      label: (
+        <>
+          Learning about
+          <br />
+          Mental Health
+        </>
+      ),
       content: (
         <div className="bg-yellow-100 p-4 rounded shadow">
           <h2 className="text-xl font-bold">Content for Tab 3</h2>
@@ -37,7 +55,13 @@ const About = () => {
     },
     {
       iconName: "info",
-      label: "Self-Expression",
+      label: (
+        <>
+          Self-
+          <br />
+          expressing
+        </>
+      ),
       content: (
         <div className="bg-blue-100 p-4 rounded shadow">
           <h2 className="text-xl font-bold">Content for Tab 4</h2>
