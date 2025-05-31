@@ -6,8 +6,8 @@ import "./about.scss";
 const About = () => {
   const tabs = [
     {
-      iconName: "home",
-      label: "Home",
+      iconName: "handshake",
+      label: "Building Community",
       content: (
         <div className="bg-red-100 p-4 rounded shadow">
           <h2 className="text-xl font-bold">Content for Tab 1</h2>
@@ -17,7 +17,7 @@ const About = () => {
     },
     {
       iconName: "person",
-      label: "Profile",
+      label: "Making Connections",
       content: (
         <div className="bg-green-100 p-4 rounded shadow">
           <h2 className="text-xl font-bold">Content for Tab 2</h2>
@@ -27,7 +27,7 @@ const About = () => {
     },
     {
       iconName: "settings",
-      label: "Settings",
+      label: "Learning about Mental Health",
       content: (
         <div className="bg-yellow-100 p-4 rounded shadow">
           <h2 className="text-xl font-bold">Content for Tab 3</h2>
@@ -37,7 +37,7 @@ const About = () => {
     },
     {
       iconName: "info",
-      label: "About",
+      label: "Self-Expression",
       content: (
         <div className="bg-blue-100 p-4 rounded shadow">
           <h2 className="text-xl font-bold">Content for Tab 4</h2>
