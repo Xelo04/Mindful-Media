@@ -33,7 +33,7 @@ const About = () => {
             foster resilience and a greater sense of well-being.
           </p>
           <div className="example">
-            <div className="example-images">
+            <div className="example-images" id="images-speedsisters">
               <img
                 src="../../../public/real-life-examples/building-community/ig-title.jpg"
                 alt="ig-title"
@@ -83,15 +83,16 @@ const About = () => {
                 what we’re talking about).
                 <br />
                 <br />
-                <a
-                  href="https://www.instagram.com/speedsisters.pzn/"
-                  target="_blank"
-                  className="example-link-button"
-                >
-                  <button className="example-button">
+                <div className="link-button">
+                  <a
+                    href="https://www.instagram.com/speedsisters.pzn/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="example-button"
+                  >
                     Click here to visit their website
-                  </button>
-                </a>
+                  </a>
+                </div>
                 <br />
               </p>
               <img
@@ -185,11 +186,10 @@ const About = () => {
                 <a
                   href="https://www.instagram.com/speedsisters.pzn/"
                   target="_blank"
-                  className="example-link-button"
+                  rel="noopener noreferrer"
+                  className="example-button"
                 >
-                  <button className="example-button">
-                    Click here to visit their website
-                  </button>
+                  Click here to visit their website
                 </a>
                 <br />
               </p>
@@ -214,89 +214,126 @@ const About = () => {
       ),
       content: (
         <div className="content-container">
-          <span className="title">Building community</span>
+          <span className="title">Learning about Mental Health</span>
           <p>
-            Building a community through social media - whether online or in
-            real life - can have a powerful, positive impact on mental health.
-            It allows people to connect with others who share similar interests,
-            hobbies, values, or experiences, creating a sense of belonging and
-            support. These digital spaces can provide a platform for open
-            conversations about mental health, reducing stigma and encouraging
-            people to seek help when needed. Social media also makes it easier
-            to maintain long-distance relationships or find niche communities
-            that might not exist locally. When used mindfully, these connections
-            can reduce feelings of isolation and loneliness. Engaging with a
-            positive and encouraging community can boost self-esteem and provide
-            emotional validation. Over time, these supportive interactions can
-            foster resilience and a greater sense of well-being.
+            Social media now goes beyond just a space for connection and
+            entertainment, it has evolved into a vital platform for mental
+            health awareness, education, and advocacy (Gather Social, 2024).
+            Social media provides a space for open dialogue on issues that may
+            otherwise be kept in the shadows. We see how platforms like
+            Instagram, TikTok, and X provide users with resources, create safe
+            spaces for honest conversations, and help destigmatize mental health
+            struggles. Brands and influencers alike are leveraging their reach
+            to raise awareness, promote self-care, and encourage help-seeking
+            behaviors.
           </p>
           <div className="example">
             <div className="example-images">
-              <img
-                src="../../../public/real-life-examples/building-community/ig-title.jpg"
-                alt="ig-title"
-                className="example-image"
-              />
-              <img
-                src="../../../public/real-life-examples/building-community/ig-description.jpg"
-                alt="ig-description"
-                className="example-image"
-              />
+              <div className="example-video">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/tX8TgVR33KM"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <div className="link-button">
+                <a
+                  href="https://www.canaries.co.uk/content/mental-health-video-made-available-to-all"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="example-button"
+                >
+                  Click here to visit their website
+                </a>
+              </div>
             </div>
             <div className="example-description">
               <div className="example-description-title">
                 <a
-                  href="https://www.instagram.com/speedsisters.pzn/"
+                  href="https://www.canaries.co.uk/content/mental-health-video-made-available-to-all"
                   target="_blank"
                 >
-                  <span className="title">Speedsisters.pzn</span>
+                  <span className="title">You Are Not Alone</span>
                 </a>
               </div>
               <p className="example-description-text">
-                Speedsisters.pzn is a run club for girls from Poznań, an amazing
-                community of girls supporting other girls, while staying healthy
-                and safe.
+                A standout example is Norwich City FC’s You Are Not Alone
+                campaign (Norwich City Football Club, 2023), created in
+                partnership with Samaritans. The emotional video highlighted
+                men’s mental health struggles and the importance of checking in
+                on others, sparking global conversations. With over 55 million
+                views, the campaign demonstrated how powerful storytelling on
+                social media can shift perceptions and drive real-world impact.
                 <br />
                 <br />
-                It started with just a few girls exercising together near
-                Rusałka Lake. Then, they started inviting more people over,
-                created an Instagram and Tiktok account, published some posts
-                and reached a wide audience.
-                <br />
-                <br />
-                Now dozens of women meet twice a week, to run and enjoy their
-                time together. On Strava, a website to track your working-out
-                progress and cheer up others, they now have 120 members.
-                <br />
-                <br />
-                Not only have they established new friendships, they also
-                motivate themselves, provide support for each other and
-                encourage a lot of women to start working out.
-                <br />
-                <br />
-                What’s also important, their freshly built community allows them
-                to run with more confidence. Unfortunately, women still cannot
-                feel completely safe alone in the woods, but running as a huge
-                group reduces most of the possible risks (we believe, you know,
-                what we’re talking about).
-                <br />
-                <br />
-                <a
-                  href="https://www.instagram.com/speedsisters.pzn/"
-                  target="_blank"
-                  className="example-link-button"
-                >
-                  <button className="example-button">
-                    Click here to visit their website
-                  </button>
-                </a>
-                <br />
+                Social media has the potential to make mental health information
+                accessible, relatable, and actionable particularly for younger
+                generations who may struggle to open up in traditional settings.
+                By sharing authentic stories, promoting self-care, and
+                amplifying resources, platforms and brands can foster a more
+                supportive, informed digital community. #MindfulMedia reminds us
+                that the right message, delivered with care, can inspire action
+                and connection in a world that often feels isolating.
               </p>
-              <img
-                src="../../../public/real-life-examples/building-community/application.jpg"
-                alt="ig-description"
-                className="example-image-application"
-              />
+            </div>
+          </div>
+
+          <div className="example example-next">
+            <div className="example-description">
+              <div className="example-description-title">
+                <a
+                  href="https://www.canaries.co.uk/content/mental-health-video-made-available-to-all"
+                  target="_blank"
+                >
+                  <span className="title">You Are Not Alone</span>
+                </a>
+              </div>
+              <p className="example-description-text">
+                A standout example is Norwich City FC’s You Are Not Alone
+                campaign (Norwich City Football Club, 2023), created in
+                partnership with Samaritans. The emotional video highlighted
+                men’s mental health struggles and the importance of checking in
+                on others, sparking global conversations. With over 55 million
+                views, the campaign demonstrated how powerful storytelling on
+                social media can shift perceptions and drive real-world impact.
+                <br />
+                <br />
+                Social media has the potential to make mental health information
+                accessible, relatable, and actionable particularly for younger
+                generations who may struggle to open up in traditional settings.
+                By sharing authentic stories, promoting self-care, and
+                amplifying resources, platforms and brands can foster a more
+                supportive, informed digital community. #MindfulMedia reminds us
+                that the right message, delivered with care, can inspire action
+                and connection in a world that often feels isolating.
+              </p>
+            </div>
+            <div className="example-images">
+              <div className="example-video">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/tX8TgVR33KM"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <div className="link-button">
+                <a
+                  href="https://www.canaries.co.uk/content/mental-health-video-made-available-to-all"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="example-button"
+                >
+                  Click here to visit their website
+                </a>
+              </div>
             </div>
           </div>
         </div>
