@@ -90,7 +90,7 @@ const About = () => {
                     rel="noopener noreferrer"
                     className="example-button"
                   >
-                    Click here to visit their website
+                    Click here to visit their Instagram
                   </a>
                 </div>
                 <br />
@@ -106,9 +106,7 @@ const About = () => {
           <div className="example example-next">
             <div className="example-description left">
               <div className="example-description-title">
-                <a href="https://www.drjulie.uk/" target="_blank">
-                  <span className="title">Online Art Communities</span>
-                </a>
+                <span className="title">Online Art Communities</span>
               </div>
               <p className="example-description-text">
                 Online art communities illustrate how social media can foster
@@ -123,19 +121,21 @@ const About = () => {
                 <br />
                 Online artists with large followings, like{" "}
                 <a
-                  href="http://drawingwiffwaffles.com/#SocialLinks"
-                  style={{ color: "#1d2671" }}
-                >
-                  Drawingwiffwaffles
-                </a>{" "}
-                on YouTube and{" "}
-                <a
                   href="https://www.instagram.com/rosies.sketchbook/"
                   style={{ color: "#1d2671" }}
+                  target="_blank"
                 >
                   @rosies.sketchbook
                 </a>{" "}
-                on Instagram, inspire thousands by sharing their creative
+                on Instagram and{" "}
+                <a
+                  href="http://drawingwiffwaffles.com/#SocialLinks"
+                  style={{ color: "#1d2671" }}
+                  target="_blank"
+                >
+                  Drawingwiffwaffles
+                </a>{" "}
+                on YouTube, inspire thousands by sharing their creative
                 journeys, sparking conversations, and building inclusive
                 communities. Their content not only educates but also empowers
                 followers to experiment, learn, and express themselves freely
@@ -164,34 +164,47 @@ const About = () => {
                 recognizing and amplifying such positive online experiences.
                 <br />
                 <br />
-                <div className="link-button">
-                  <a
-                    href="https://www.drjulie.uk/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="example-button"
-                  >
-                    Click here to visit her website
-                  </a>
+                <div className="link-buttons">
+                  <div className="link-button">
+                    <a
+                      href="https://www.instagram.com/rosies.sketchbook/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="example-button"
+                    >
+                      Click here to visit Rosies Instagram
+                    </a>
+                  </div>
+                  <div className="link-button">
+                    <a
+                      href="http://drawingwiffwaffles.com/#SocialLinks"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="example-button"
+                    >
+                      Click here to visit Drawingwiffwaffles
+                    </a>
+                  </div>
                 </div>
                 <br />
               </p>
-              <img
-                src="real-life-examples/learning-about-mental-health/application.jpg"
-                alt="ig-description"
-                className="example-image-application"
-              />
             </div>
             <div className="example-images right instagram">
               <img
-                src="real-life-examples/learning-about-mental-health/ig-title.jpg"
-                alt="ig-title"
+                src="real-life-examples/building-community/ig-title2.jpg"
+                alt="ig-title2"
                 className="example-image"
               />
               <img
-                src="real-life-examples/learning-about-mental-health/ig-description.jpg"
-                alt="ig-description"
+                src="real-life-examples/building-community/yt-title.jpg"
+                alt="yt-title"
                 className="example-image"
+              />
+              <img
+                src="real-life-examples/building-community/yt-description.png"
+                alt="yt-title"
+                className="example-image"
+                style={{ padding: "0px" }}
               />
             </div>
           </div>
@@ -324,7 +337,7 @@ const About = () => {
                     rel="noopener noreferrer"
                     className="example-button"
                   >
-                    Click here to visit her website
+                    Click here to visit her Instagram
                   </a>
                 </div>
                 <br />
@@ -431,7 +444,7 @@ const About = () => {
                     rel="noopener noreferrer"
                     className="example-button"
                   >
-                    Click here to visit her website
+                    Click here to visit her Instagram
                   </a>
                 </div>
                 <br />

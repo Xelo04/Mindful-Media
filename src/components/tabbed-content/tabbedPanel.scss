@@ -120,6 +120,13 @@
       .link-button {
         text-align: center;
       }
+      .link-buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
       .example-button {
         display: inline-block;
         padding: 0.75em 2em;
