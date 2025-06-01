@@ -32,7 +32,75 @@ const About = () => {
             emotional validation. Over time, these supportive interactions can
             foster resilience and a greater sense of well-being.
           </p>
-          div.
+          <div className="example">
+            <div className="example-images">
+              <img
+                src="../../../public/real-life-examples/building-community/ig-title.jpg"
+                alt="ig-title"
+                className="example-image"
+              />
+              <img
+                src="../../../public/real-life-examples/building-community/ig-description.jpg"
+                alt="ig-description"
+                className="example-image"
+              />
+            </div>
+            <div className="example-description">
+              <div className="example-description-title">
+                <a
+                  href="https://www.instagram.com/speedsisters.pzn/"
+                  target="_blank"
+                >
+                  <span className="title">Speedsisters.pzn</span>
+                </a>
+              </div>
+              <p className="example-description-text">
+                Speedsisters.pzn is a run club for girls from Poznań, an amazing
+                community of girls supporting other girls, while staying healthy
+                and safe.
+                <br />
+                <br />
+                It started with just a few girls exercising together near
+                Rusałka Lake. Then, they started inviting more people over,
+                created an Instagram and Tiktok account, published some posts
+                and reached a wide audience.
+                <br />
+                <br />
+                Now dozens of women meet twice a week, to run and enjoy their
+                time together. On Strava, a website to track your working-out
+                progress and cheer up others, they now have 120 members.
+                <br />
+                <br />
+                Not only have they established new friendships, they also
+                motivate themselves, provide support for each other and
+                encourage a lot of women to start working out.
+                <br />
+                <br />
+                What’s also important, their freshly built community allows them
+                to run with more confidence. Unfortunately, women still cannot
+                feel completely safe alone in the woods, but running as a huge
+                group reduces most of the possible risks (we believe, you know,
+                what we’re talking about).
+                <br />
+                <br />
+                <a
+                  href="https://www.instagram.com/speedsisters.pzn/"
+                  target="_blank"
+                  className="example-link-button"
+                >
+                  <button className="example-button">
+                    Click here to visit their website
+                  </button>
+                </a>
+                <br />
+              </p>
+              <img
+                src="../../../public/real-life-examples/building-community/application.jpg"
+                alt="ig-description"
+                className="example-image-application"
+              />
+            </div>
+          </div>
         </div>
       ),
     },
@@ -46,9 +114,92 @@ const About = () => {
         </>
       ),
       content: (
-        <div className="bg-green-100 p-4 rounded shadow">
-          <h2 className="text-xl font-bold">Content for Tab 2</h2>
-          <p>Unique structure for the second tab.</p>
+        <div className="content-container">
+          <span className="title">Building community</span>
+          <p>
+            Building a community through social media - whether online or in
+            real life - can have a powerful, positive impact on mental health.
+            It allows people to connect with others who share similar interests,
+            hobbies, values, or experiences, creating a sense of belonging and
+            support. These digital spaces can provide a platform for open
+            conversations about mental health, reducing stigma and encouraging
+            people to seek help when needed. Social media also makes it easier
+            to maintain long-distance relationships or find niche communities
+            that might not exist locally. When used mindfully, these connections
+            can reduce feelings of isolation and loneliness. Engaging with a
+            positive and encouraging community can boost self-esteem and provide
+            emotional validation. Over time, these supportive interactions can
+            foster resilience and a greater sense of well-being.
+          </p>
+          <div className="example">
+            <div className="example-images">
+              <img
+                src="../../../public/real-life-examples/building-community/ig-title.jpg"
+                alt="ig-title"
+                className="example-image"
+              />
+              <img
+                src="../../../public/real-life-examples/building-community/ig-description.jpg"
+                alt="ig-description"
+                className="example-image"
+              />
+            </div>
+            <div className="example-description">
+              <div className="example-description-title">
+                <a
+                  href="https://www.instagram.com/speedsisters.pzn/"
+                  target="_blank"
+                >
+                  <span className="title">Speedsisters.pzn</span>
+                </a>
+              </div>
+              <p className="example-description-text">
+                Speedsisters.pzn is a run club for girls from Poznań, an amazing
+                community of girls supporting other girls, while staying healthy
+                and safe.
+                <br />
+                <br />
+                It started with just a few girls exercising together near
+                Rusałka Lake. Then, they started inviting more people over,
+                created an Instagram and Tiktok account, published some posts
+                and reached a wide audience.
+                <br />
+                <br />
+                Now dozens of women meet twice a week, to run and enjoy their
+                time together. On Strava, a website to track your working-out
+                progress and cheer up others, they now have 120 members.
+                <br />
+                <br />
+                Not only have they established new friendships, they also
+                motivate themselves, provide support for each other and
+                encourage a lot of women to start working out.
+                <br />
+                <br />
+                What’s also important, their freshly built community allows them
+                to run with more confidence. Unfortunately, women still cannot
+                feel completely safe alone in the woods, but running as a huge
+                group reduces most of the possible risks (we believe, you know,
+                what we’re talking about).
+                <br />
+                <br />
+                <a
+                  href="https://www.instagram.com/speedsisters.pzn/"
+                  target="_blank"
+                  className="example-link-button"
+                >
+                  <button className="example-button">
+                    Click here to visit their website
+                  </button>
+                </a>
+                <br />
+              </p>
+              <img
+                src="../../../public/real-life-examples/building-community/application.jpg"
+                alt="ig-description"
+                className="example-image-application"
+              />
+            </div>
+          </div>
         </div>
       ),
     },
@@ -62,9 +213,92 @@ const About = () => {
         </>
       ),
       content: (
-        <div className="bg-yellow-100 p-4 rounded shadow">
-          <h2 className="text-xl font-bold">Content for Tab 3</h2>
-          <p>Another layout here.</p>
+        <div className="content-container">
+          <span className="title">Building community</span>
+          <p>
+            Building a community through social media - whether online or in
+            real life - can have a powerful, positive impact on mental health.
+            It allows people to connect with others who share similar interests,
+            hobbies, values, or experiences, creating a sense of belonging and
+            support. These digital spaces can provide a platform for open
+            conversations about mental health, reducing stigma and encouraging
+            people to seek help when needed. Social media also makes it easier
+            to maintain long-distance relationships or find niche communities
+            that might not exist locally. When used mindfully, these connections
+            can reduce feelings of isolation and loneliness. Engaging with a
+            positive and encouraging community can boost self-esteem and provide
+            emotional validation. Over time, these supportive interactions can
+            foster resilience and a greater sense of well-being.
+          </p>
+          <div className="example">
+            <div className="example-images">
+              <img
+                src="../../../public/real-life-examples/building-community/ig-title.jpg"
+                alt="ig-title"
+                className="example-image"
+              />
+              <img
+                src="../../../public/real-life-examples/building-community/ig-description.jpg"
+                alt="ig-description"
+                className="example-image"
+              />
+            </div>
+            <div className="example-description">
+              <div className="example-description-title">
+                <a
+                  href="https://www.instagram.com/speedsisters.pzn/"
+                  target="_blank"
+                >
+                  <span className="title">Speedsisters.pzn</span>
+                </a>
+              </div>
+              <p className="example-description-text">
+                Speedsisters.pzn is a run club for girls from Poznań, an amazing
+                community of girls supporting other girls, while staying healthy
+                and safe.
+                <br />
+                <br />
+                It started with just a few girls exercising together near
+                Rusałka Lake. Then, they started inviting more people over,
+                created an Instagram and Tiktok account, published some posts
+                and reached a wide audience.
+                <br />
+                <br />
+                Now dozens of women meet twice a week, to run and enjoy their
+                time together. On Strava, a website to track your working-out
+                progress and cheer up others, they now have 120 members.
+                <br />
+                <br />
+                Not only have they established new friendships, they also
+                motivate themselves, provide support for each other and
+                encourage a lot of women to start working out.
+                <br />
+                <br />
+                What’s also important, their freshly built community allows them
+                to run with more confidence. Unfortunately, women still cannot
+                feel completely safe alone in the woods, but running as a huge
+                group reduces most of the possible risks (we believe, you know,
+                what we’re talking about).
+                <br />
+                <br />
+                <a
+                  href="https://www.instagram.com/speedsisters.pzn/"
+                  target="_blank"
+                  className="example-link-button"
+                >
+                  <button className="example-button">
+                    Click here to visit their website
+                  </button>
+                </a>
+                <br />
+              </p>
+              <img
+                src="../../../public/real-life-examples/building-community/application.jpg"
+                alt="ig-description"
+                className="example-image-application"
+              />
+            </div>
+          </div>
         </div>
       ),
     },
@@ -78,9 +312,92 @@ const About = () => {
         </>
       ),
       content: (
-        <div className="bg-blue-100 p-4 rounded shadow">
-          <h2 className="text-xl font-bold">Content for Tab 4</h2>
-          <p>Something else entirely.</p>
+        <div className="content-container">
+          <span className="title">Building community</span>
+          <p>
+            Building a community through social media - whether online or in
+            real life - can have a powerful, positive impact on mental health.
+            It allows people to connect with others who share similar interests,
+            hobbies, values, or experiences, creating a sense of belonging and
+            support. These digital spaces can provide a platform for open
+            conversations about mental health, reducing stigma and encouraging
+            people to seek help when needed. Social media also makes it easier
+            to maintain long-distance relationships or find niche communities
+            that might not exist locally. When used mindfully, these connections
+            can reduce feelings of isolation and loneliness. Engaging with a
+            positive and encouraging community can boost self-esteem and provide
+            emotional validation. Over time, these supportive interactions can
+            foster resilience and a greater sense of well-being.
+          </p>
+          <div className="example">
+            <div className="example-images">
+              <img
+                src="../../../public/real-life-examples/building-community/ig-title.jpg"
+                alt="ig-title"
+                className="example-image"
+              />
+              <img
+                src="../../../public/real-life-examples/building-community/ig-description.jpg"
+                alt="ig-description"
+                className="example-image"
+              />
+            </div>
+            <div className="example-description">
+              <div className="example-description-title">
+                <a
+                  href="https://www.instagram.com/speedsisters.pzn/"
+                  target="_blank"
+                >
+                  <span className="title">Speedsisters.pzn</span>
+                </a>
+              </div>
+              <p className="example-description-text">
+                Speedsisters.pzn is a run club for girls from Poznań, an amazing
+                community of girls supporting other girls, while staying healthy
+                and safe.
+                <br />
+                <br />
+                It started with just a few girls exercising together near
+                Rusałka Lake. Then, they started inviting more people over,
+                created an Instagram and Tiktok account, published some posts
+                and reached a wide audience.
+                <br />
+                <br />
+                Now dozens of women meet twice a week, to run and enjoy their
+                time together. On Strava, a website to track your working-out
+                progress and cheer up others, they now have 120 members.
+                <br />
+                <br />
+                Not only have they established new friendships, they also
+                motivate themselves, provide support for each other and
+                encourage a lot of women to start working out.
+                <br />
+                <br />
+                What’s also important, their freshly built community allows them
+                to run with more confidence. Unfortunately, women still cannot
+                feel completely safe alone in the woods, but running as a huge
+                group reduces most of the possible risks (we believe, you know,
+                what we’re talking about).
+                <br />
+                <br />
+                <a
+                  href="https://www.instagram.com/speedsisters.pzn/"
+                  target="_blank"
+                  className="example-link-button"
+                >
+                  <button className="example-button">
+                    Click here to visit their website
+                  </button>
+                </a>
+                <br />
+              </p>
+              <img
+                src="../../../public/real-life-examples/building-community/application.jpg"
+                alt="ig-description"
+                className="example-image-application"
+              />
+            </div>
+          </div>
         </div>
       ),
     },

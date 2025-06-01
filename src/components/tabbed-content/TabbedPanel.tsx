@@ -28,7 +28,7 @@ const TabbedPanel = ({ tabs }: TabbedPanelProps) => {
             className={`tab-btn${index === activeIndex ? " active" : ""}`}
           >
             <span className="material-icons">{tab.iconName}</span>
-            <span>{tab.label}</span>
+            <span className="label">{tab.label}</span>
           </button>
         ))}
       </div>

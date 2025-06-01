@@ -17,7 +17,7 @@
     align-items: center;
     margin-top: 20px;
     .tab-btn {
-      background: constants.$middle-bg;
+      background: constants.$extra-dark-middle-bg;
       color: constants.$white-color;
       border: none;
       border-radius: 20px;
@@ -26,13 +26,19 @@
       align-items: center;
       justify-content: center;
       margin-inline: 15%;
-      height: auto;
       padding: 20px;
       cursor: pointer;
-      min-width: 130px;
+      min-width: 160px;
+      aspect-ratio: 1;
+      &.active {
+        background: constants.$dark-bg;
+      }
       .material-icons {
-        font-size: 3.6em;
+        font-size: 5em;
         margin-bottom: 5px;
+      }
+      .label {
+        font-size: 1.2em;
       }
     }
   }
@@ -44,19 +50,66 @@
     align-items: center;
     justify-content: center;
     background: constants.$light-bg;
-    color: constants.$black-color;
-    padding-block: 20px;
+    color: constants.$extra-dark-middle-bg;
+    padding-block: 40px;
     padding-inline: 5%;
     border: none;
     border-radius: 20px;
-    .title {
-      font-size: 1.5rem;
-      font-weight: 600;
-    }
     p {
       font-size: 1.1rem;
       line-height: 1.4;
       margin-top: 25px;
+    }
+    .title {
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+    .example {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      align-items: stretch;
+
+      .example-images,
+      .example-description {
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+
+      .example-description {
+        padding-left: 3%;
+        width: 52%;
+        .example-description-title {
+          text-align: center;
+        }
+      }
+
+      .example-image,
+      .example-image-application {
+        width: 100%;
+      }
+
+      .example-link-button {
+        display: flex;
+        justify-self: center;
+        .example-button {
+          background: constants.$dark-middle-bg;
+          color: constants.$white-color;
+          border: none;
+          border-radius: 20px;
+          padding: 15px 20px;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          cursor: pointer;
+          font-size: 1.2rem;
+          &:hover {
+            background: constants.$dark-bg;
+          }
+        }
+      }
     }
   }
 }
