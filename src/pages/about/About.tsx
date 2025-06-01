@@ -6,7 +6,7 @@ import "./about.scss";
 const About = () => {
   const tabs = [
     {
-      iconName: "handshake",
+      iconName: "diversity_1",
       label: (
         <>
           Building
@@ -102,101 +102,96 @@ const About = () => {
               />
             </div>
           </div>
-        </div>
-      ),
-    },
-    {
-      iconName: "person",
-      label: (
-        <>
-          Making
-          <br />
-          Connections
-        </>
-      ),
-      content: (
-        <div className="content-container">
-          <span className="title">Building community</span>
-          <p>
-            Building a community through social media - whether online or in
-            real life - can have a powerful, positive impact on mental health.
-            It allows people to connect with others who share similar interests,
-            hobbies, values, or experiences, creating a sense of belonging and
-            support. These digital spaces can provide a platform for open
-            conversations about mental health, reducing stigma and encouraging
-            people to seek help when needed. Social media also makes it easier
-            to maintain long-distance relationships or find niche communities
-            that might not exist locally. When used mindfully, these connections
-            can reduce feelings of isolation and loneliness. Engaging with a
-            positive and encouraging community can boost self-esteem and provide
-            emotional validation. Over time, these supportive interactions can
-            foster resilience and a greater sense of well-being.
-          </p>
-          <div className="example">
-            <div className="example-images">
+
+          <div className="example example-next">
+            <div className="example-description left">
+              <div className="example-description-title">
+                <a href="https://www.drjulie.uk/" target="_blank">
+                  <span className="title">Online Art Communities</span>
+                </a>
+              </div>
+              <p className="example-description-text">
+                Online art communities illustrate how social media can foster
+                both self-expression and belonging (Balogh, 2021). These
+                platforms offer a unique space for individuals to share their
+                creative work, receive feedback, and engage with others who
+                share similar passions. Particularly during periods of social
+                isolation, such as the COVID-19 pandemic, these communities
+                provided vital opportunities for artists to connect, combat
+                loneliness, and sustain mental well-being.
+                <br />
+                <br />
+                Online artists with large followings, like{" "}
+                <a
+                  href="http://drawingwiffwaffles.com/#SocialLinks"
+                  style={{ color: "#1d2671" }}
+                >
+                  Drawingwiffwaffles
+                </a>{" "}
+                on YouTube and{" "}
+                <a
+                  href="https://www.instagram.com/rosies.sketchbook/"
+                  style={{ color: "#1d2671" }}
+                >
+                  @rosies.sketchbook
+                </a>{" "}
+                on Instagram, inspire thousands by sharing their creative
+                journeys, sparking conversations, and building inclusive
+                communities. Their content not only educates but also empowers
+                followers to experiment, learn, and express themselves freely
+                through art.
+                <br />
+                <br />
+                By participating in challenges like Inktober or Draw This in
+                Your Style (Agnes, 2025), users are encouraged to step out of
+                their comfort zones, develop new skills, and express their
+                unique artistic voice. The accessibility of these spaces often
+                free and open globally lowers barriers to participation,
+                allowing artists from diverse backgrounds to contribute, learn,
+                and grow.
+                <br />
+                <br />
+                Furthermore, the feedback loop within these communities promotes
+                continuous learning. Constructive criticism, tips on techniques,
+                and exposure to new tools or artists empower users to refine
+                their skills and deepen their engagement with art as a form of
+                self-expression. Online art communities demonstrate how social
+                media can act as a catalyst for self-expression, fostering a
+                sense of belonging while encouraging artistic growth. By
+                connecting individuals with shared interests, these digital
+                spaces transform isolation into creativity, helping users build
+                resilience and find joy through art. #MindfulMedia advocates for
+                recognizing and amplifying such positive online experiences.
+                <br />
+                <br />
+                <div className="link-button">
+                  <a
+                    href="https://www.drjulie.uk/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="example-button"
+                  >
+                    Click here to visit her website
+                  </a>
+                </div>
+                <br />
+              </p>
               <img
-                src="../../../public/real-life-examples/building-community/ig-title.jpg"
+                src="real-life-examples/learning-about-mental-health/application.jpg"
+                alt="ig-description"
+                className="example-image-application"
+              />
+            </div>
+            <div className="example-images right instagram">
+              <img
+                src="real-life-examples/learning-about-mental-health/ig-title.jpg"
                 alt="ig-title"
                 className="example-image"
               />
               <img
-                src="../../../public/real-life-examples/building-community/ig-description.jpg"
+                src="real-life-examples/learning-about-mental-health/ig-description.jpg"
                 alt="ig-description"
                 className="example-image"
-              />
-            </div>
-            <div className="example-description">
-              <div className="example-description-title">
-                <a
-                  href="https://www.instagram.com/speedsisters.pzn/"
-                  target="_blank"
-                >
-                  <span className="title">Speedsisters.pzn</span>
-                </a>
-              </div>
-              <p className="example-description-text">
-                Speedsisters.pzn is a run club for girls from Poznań, an amazing
-                community of girls supporting other girls, while staying healthy
-                and safe.
-                <br />
-                <br />
-                It started with just a few girls exercising together near
-                Rusałka Lake. Then, they started inviting more people over,
-                created an Instagram and Tiktok account, published some posts
-                and reached a wide audience.
-                <br />
-                <br />
-                Now dozens of women meet twice a week, to run and enjoy their
-                time together. On Strava, a website to track your working-out
-                progress and cheer up others, they now have 120 members.
-                <br />
-                <br />
-                Not only have they established new friendships, they also
-                motivate themselves, provide support for each other and
-                encourage a lot of women to start working out.
-                <br />
-                <br />
-                What’s also important, their freshly built community allows them
-                to run with more confidence. Unfortunately, women still cannot
-                feel completely safe alone in the woods, but running as a huge
-                group reduces most of the possible risks (we believe, you know,
-                what we’re talking about).
-                <br />
-                <br />
-                <a
-                  href="https://www.instagram.com/speedsisters.pzn/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="example-button"
-                >
-                  Click here to visit their website
-                </a>
-                <br />
-              </p>
-              <img
-                src="../../../public/real-life-examples/building-community/application.jpg"
-                alt="ig-description"
-                className="example-image-application"
               />
             </div>
           </div>
@@ -204,7 +199,7 @@ const About = () => {
       ),
     },
     {
-      iconName: "settings",
+      iconName: "health_and_safety",
       label: (
         <>
           Learning about
@@ -329,7 +324,7 @@ const About = () => {
                     rel="noopener noreferrer"
                     className="example-button"
                   >
-                    Click here to visit their website
+                    Click here to visit her website
                   </a>
                 </div>
                 <br />
@@ -357,98 +352,138 @@ const About = () => {
       ),
     },
     {
-      iconName: "info",
+      iconName: "record_voice_over",
       label: (
         <>
           Self-
           <br />
-          expressing
+          Expression
         </>
       ),
       content: (
         <div className="content-container">
-          <span className="title">Building community</span>
+          <span className="title">Self-Expression</span>
           <p>
-            Building a community through social media - whether online or in
-            real life - can have a powerful, positive impact on mental health.
-            It allows people to connect with others who share similar interests,
-            hobbies, values, or experiences, creating a sense of belonging and
-            support. These digital spaces can provide a platform for open
-            conversations about mental health, reducing stigma and encouraging
-            people to seek help when needed. Social media also makes it easier
-            to maintain long-distance relationships or find niche communities
-            that might not exist locally. When used mindfully, these connections
-            can reduce feelings of isolation and loneliness. Engaging with a
-            positive and encouraging community can boost self-esteem and provide
-            emotional validation. Over time, these supportive interactions can
-            foster resilience and a greater sense of well-being.
+            Social media offers many ways to express yourself, from sharing
+            photos and videos to writing posts about your thoughts, feelings, or
+            experiences. You can customize your profile, use emojis, and even
+            create content like art, music, or memes to show who you are. For
+            some people, it’s easier to open up online because there’s less
+            pressure and judgment compared to face-to-face conversations. You
+            have time to think about what you want to say and how you want to
+            say it. Being behind a screen can give a sense of safety, especially
+            for those who are shy or anxious in social settings. On social media
+            it’s also a lot easier to connect with others who share similar
+            interests, because it’s easier to reach a bigger audience, which can
+            make self-expression feel more meaningful and accepted.
           </p>
           <div className="example">
-            <div className="example-images">
+            <div className="example-images instagram">
               <img
-                src="../../../public/real-life-examples/building-community/ig-title.jpg"
+                src="real-life-examples/self-expression/ig-title.jpg"
                 alt="ig-title"
                 className="example-image"
               />
               <img
-                src="../../../public/real-life-examples/building-community/ig-description.jpg"
+                src="real-life-examples/self-expression/ig-description.jpg"
                 alt="ig-description"
                 className="example-image"
+                style={{ paddingBottom: "3px" }}
               />
             </div>
-            <div className="example-description">
+            <div className="example-description right">
               <div className="example-description-title">
                 <a
-                  href="https://www.instagram.com/speedsisters.pzn/"
+                  href="https://www.instagram.com/radiantbambi/"
                   target="_blank"
                 >
-                  <span className="title">Speedsisters.pzn</span>
+                  <span className="title">Ash Soto</span>
                 </a>
               </div>
               <p className="example-description-text">
-                Speedsisters.pzn is a run club for girls from Poznań, an amazing
-                community of girls supporting other girls, while staying healthy
-                and safe.
+                Ash Soto, diagnosed with vitiligo at 12, initially struggled
+                with self-esteem due to bullying and societal pressures
+                (Lanquist, 2016). As the condition spread, she concealed her
+                skin, leading to anxiety and depression. A turning point came
+                when Ash began sharing her journey on Instagram, after initially
+                focusing on face makeup. Gradually, she revealed her vitiligo,
+                receiving overwhelming support from followers. Embracing her
+                skin, she created the "Marker Chronicles," tracing her vitiligo
+                patches with markers to highlight their uniqueness. This
+                artistic expression not only empowered her but also inspired
+                others to embrace their differences. Ash's story underscores the
+                positive impact of social media in fostering self-expression and
+                community support.
                 <br />
                 <br />
-                It started with just a few girls exercising together near
-                Rusałka Lake. Then, they started inviting more people over,
-                created an Instagram and Tiktok account, published some posts
-                and reached a wide audience.
+                Ash Soto's journey illustrates the transformative power of
+                self-expression and community support through social media. By
+                embracing her uniqueness and sharing her story, she has inspired
+                countless others to do the same. Her experience highlights how
+                digital platforms can serve as catalysts for personal growth and
+                societal change, promoting acceptance and understanding.
                 <br />
                 <br />
-                Now dozens of women meet twice a week, to run and enjoy their
-                time together. On Strava, a website to track your working-out
-                progress and cheer up others, they now have 120 members.
-                <br />
-                <br />
-                Not only have they established new friendships, they also
-                motivate themselves, provide support for each other and
-                encourage a lot of women to start working out.
-                <br />
-                <br />
-                What’s also important, their freshly built community allows them
-                to run with more confidence. Unfortunately, women still cannot
-                feel completely safe alone in the woods, but running as a huge
-                group reduces most of the possible risks (we believe, you know,
-                what we’re talking about).
-                <br />
-                <br />
-                <a
-                  href="https://www.instagram.com/speedsisters.pzn/"
-                  target="_blank"
-                  className="example-link-button"
-                >
-                  <button className="example-button">
-                    Click here to visit their website
-                  </button>
-                </a>
+                <div className="link-button">
+                  <a
+                    href="https://www.instagram.com/radiantbambi/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="example-button"
+                  >
+                    Click here to visit her website
+                  </a>
+                </div>
                 <br />
               </p>
+            </div>
+          </div>
+          <div className="example example-next">
+            <div className="example-description left">
+              <div className="example-description-title">
+                <a
+                  href="https://www.bbc.com/news/newsbeat-35607567"
+                  target="_blank"
+                >
+                  <span className="title">Sophie Hawker's Story</span>
+                </a>
+              </div>
+              <p className="example-description-text">
+                While social media is often criticized for negativity, stories
+                like Sophie Hawker’s reveal its transformative power in
+                supporting mental health. Sophie, a 23-year-old student,
+                struggled silently with anxiety until she stumbled upon a tweet
+                about someone starting Cognitive Behavioural Therapy (CBT). This
+                chance encounter was the catalyst she needed to recognize her
+                symptoms, seek professional help, and begin her healing journey.
+                By sharing her feelings online, Sophie found a community of
+                people her age who understood what she was going through,
+                something she hadn’t found in her immediate environment.
+                Similarly, users like Madelaine shared that it was easier to
+                express anxiety on platforms like Twitter or YouTube than with
+                friends. For them, the anonymity and shared understanding
+                fostered by social media created a safe space to process
+                emotions without judgment
+                <br />
+                <br />
+                <div className="link-button">
+                  <a
+                    href="https://www.bbc.com/news/newsbeat-35607567"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="example-button"
+                  >
+                    Click here to read an article about her
+                  </a>
+                </div>
+                <br />
+              </p>
+            </div>
+            <div className="example-images">
               <img
-                src="../../../public/real-life-examples/building-community/application.jpg"
-                alt="ig-description"
-                className="example-image-application"
+                src="real-life-examples/self-expression/example2.png"
+                alt="ig-title"
+                className="example-image"
               />
             </div>
           </div>
