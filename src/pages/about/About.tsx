@@ -33,19 +33,19 @@ const About = () => {
             foster resilience and a greater sense of well-being.
           </p>
           <div className="example">
-            <div className="example-images" id="images-speedsisters">
+            <div className="example-images instagram">
               <img
-                src="../../../public/real-life-examples/building-community/ig-title.jpg"
+                src="real-life-examples/building-community/ig-title.jpg"
                 alt="ig-title"
                 className="example-image"
               />
               <img
-                src="../../../public/real-life-examples/building-community/ig-description.jpg"
+                src="real-life-examples/building-community/ig-description.jpg"
                 alt="ig-description"
                 className="example-image"
               />
             </div>
-            <div className="example-description">
+            <div className="example-description right">
               <div className="example-description-title">
                 <a
                   href="https://www.instagram.com/speedsisters.pzn/"
@@ -96,7 +96,7 @@ const About = () => {
                 <br />
               </p>
               <img
-                src="../../../public/real-life-examples/building-community/application.jpg"
+                src="real-life-examples/building-community/application.jpg"
                 alt="ig-description"
                 className="example-image-application"
               />
@@ -251,7 +251,7 @@ const About = () => {
                 </a>
               </div>
             </div>
-            <div className="example-description">
+            <div className="example-description right">
               <div className="example-description-title">
                 <a
                   href="https://www.canaries.co.uk/content/mental-health-video-made-available-to-all"
@@ -283,57 +283,74 @@ const About = () => {
           </div>
 
           <div className="example example-next">
-            <div className="example-description">
+            <div className="example-description left">
               <div className="example-description-title">
-                <a
-                  href="https://www.canaries.co.uk/content/mental-health-video-made-available-to-all"
-                  target="_blank"
-                >
-                  <span className="title">You Are Not Alone</span>
+                <a href="https://www.drjulie.uk/" target="_blank">
+                  <span className="title">Dr. Julie Smith</span>
                 </a>
               </div>
               <p className="example-description-text">
-                A standout example is Norwich City FC’s You Are Not Alone
-                campaign (Norwich City Football Club, 2023), created in
-                partnership with Samaritans. The emotional video highlighted
-                men’s mental health struggles and the importance of checking in
-                on others, sparking global conversations. With over 55 million
-                views, the campaign demonstrated how powerful storytelling on
-                social media can shift perceptions and drive real-world impact.
+                Dr. Julie Smith (Influencer Matchmaker, n.d.) exemplifies the
+                power of digital platforms in transforming mental health
+                awareness into actionable support. As a clinical psychologist,
+                author, and content creator, she uses her expertise to make
+                mental health resources widely accessible, reaching millions
+                through videos, blogs, and social media posts.
                 <br />
                 <br />
-                Social media has the potential to make mental health information
-                accessible, relatable, and actionable particularly for younger
-                generations who may struggle to open up in traditional settings.
-                By sharing authentic stories, promoting self-care, and
-                amplifying resources, platforms and brands can foster a more
-                supportive, informed digital community. #MindfulMedia reminds us
-                that the right message, delivered with care, can inspire action
-                and connection in a world that often feels isolating.
+                With over a decade of experience in the NHS and specialized
+                settings like the Ministry of Defence, Dr. Julie brings clinical
+                credibility to her content. Her approach is grounded in
+                evidence-based psychology, yet she communicates complex topics
+                with warmth and clarity empowering her audience to understand
+                mental health challenges, develop coping strategies, and seek
+                help when needed. By sharing free, practical tools on platforms
+                like TikTok and Instagram, Dr. Julie democratizes mental health
+                education. Her community includes diverse audiences: students,
+                parents, professionals, and military personnel alike. Through
+                relatable, bite-sized content, she fosters a sense of connection
+                and collective support making mental health education less
+                clinical, more human, and deeply accessible.
+                <br />
+                <br />
+                Dr. Julie Smith’s work illustrates how a single voice, amplified
+                through social media, can build a global community of care. Her
+                content not only informs but also unites people in their shared
+                experiences, creating a digital space where mental health is
+                normalized, and no one has to navigate their journey alone.
+                #MindfulMedia celebrates leaders like Dr. Julie who make mental
+                health support a shared, inclusive effort.
+                <br />
+                <br />
+                <div className="link-button">
+                  <a
+                    href="https://www.drjulie.uk/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="example-button"
+                  >
+                    Click here to visit their website
+                  </a>
+                </div>
+                <br />
               </p>
+              <img
+                src="real-life-examples/learning-about-mental-health/application.jpg"
+                alt="ig-description"
+                className="example-image-application"
+              />
             </div>
-            <div className="example-images">
-              <div className="example-video">
-                <iframe
-                  width="100%"
-                  height="100%"
-                  src="https://www.youtube.com/embed/tX8TgVR33KM"
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
-              <div className="link-button">
-                <a
-                  href="https://www.canaries.co.uk/content/mental-health-video-made-available-to-all"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="example-button"
-                >
-                  Click here to visit their website
-                </a>
-              </div>
+            <div className="example-images right instagram">
+              <img
+                src="real-life-examples/learning-about-mental-health/ig-title.jpg"
+                alt="ig-title"
+                className="example-image"
+              />
+              <img
+                src="real-life-examples/learning-about-mental-health/ig-description.jpg"
+                alt="ig-description"
+                className="example-image"
+              />
             </div>
           </div>
         </div>

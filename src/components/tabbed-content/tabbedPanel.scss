@@ -65,18 +65,15 @@
       font-weight: 600;
     }
     .example-next {
-      margin-top: 60px !important;
+      margin-top: 70px !important;
     }
     .example {
-      margin-top: 30px;
+      margin-top: 50px;
       display: flex;
       flex-direction: row;
       width: 100%;
       align-items: stretch;
 
-      #images-speedsisters {
-        background: black;
-      }
       .example-images,
       .example-description {
         width: 48%;
@@ -84,10 +81,19 @@
         flex-direction: column;
         justify-content: flex-start;
       }
-
+      .example-images {
+        &.instagram {
+          background: black !important;
+        }
+      }
       .example-description {
-        padding-left: 3%;
         width: 52%;
+        &.right {
+          padding-left: 3%;
+        }
+        &.left {
+          padding-right: 3%;
+        }
         .example-description-title {
           text-align: center;
         }
