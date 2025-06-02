@@ -180,6 +180,7 @@
         .example-description {
           padding-left: 0;
           padding-right: 0;
+          text-align: center;
         }
       }
       #speedsisters {
@@ -202,7 +203,7 @@
     }
     @media (max-width: 650px) {
       p {
-        font-size: 0.75rem;
+        font-size: 1rem;
       }
       .example {
         .link-buttons {
