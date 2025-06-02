@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./TabbedPanel.scss"; // Create this file for styles
+import "./tabbedPanel.scss";
 
 interface TabInfo {
   iconName: string;
