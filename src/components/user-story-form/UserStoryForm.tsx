@@ -54,7 +54,38 @@ const UserStoryForm = () => {
   return (
     <div className="userStoryForm">
       <form ref={formRef} onSubmit={sendEmail}>
-        <h4 style={{ fontWeight: "bold" }}></h4>
+        <h4>
+          Here you can share with us your positive experiences with social
+          media, how it helped you with your mental health. This is a safe
+          space, feel free to write all of your feelings down, there will be no
+          judgment on our side.
+          <br />
+          <br />
+          Be aware, that if you participate in this survey, your answers might
+          be used to create a story for our website by our editors who will try
+          to capture the sense of your responses as thoroughly as possible. This
+          website was created to form a community, safe space for sharing
+          experiences, inspiration for others who are struggling and are looking
+          for help on social media.
+          <br />
+          <br />
+          In descriptive questions, please elaborate your thoughts, so it's
+          easier for us, to understand your story.
+          <br />
+          <br />
+          When it comes to metric section, remember that all the questions are
+          optional, you can remain as anonymous as you wish.
+          <br />
+          <br />
+          At the bottom of this page, you can click a button to attach your
+          email address along with the survey. Thanks to that, we can contact
+          you directly if you're interested in telling us more about yourself
+          and your experiences. If you can write your own long story, with help
+          of our editors or completely by yourself.
+          <br />
+          <br />
+          Take your time and speak from your heart!
+        </h4>
         <h4>How much time do you spend on social media on a daily basis?</h4>
         <FormDropdownInput
           name="extraQuestion"
