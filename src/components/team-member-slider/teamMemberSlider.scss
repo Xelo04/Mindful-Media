@@ -78,6 +78,7 @@
         width: 80%;
         padding-left: 5%;
         text-align: justify;
+        min-height: 420px;
       }
     }
   }
@@ -87,7 +88,6 @@
     align-items: center;
     width: 100%;
     padding-inline: 3px;
-
     button {
       width: 25%;
       background-color: transparent;
@@ -114,9 +114,11 @@
         margin-bottom: 20px;
       }
       .team-member-info {
-        width: 80%;
+        width: 88%;
         padding-left: 5%;
         text-align: justify;
+        min-height: 0px;
+        height: auto;
         p {
           display: none;
         }
