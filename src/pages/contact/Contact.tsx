@@ -34,19 +34,19 @@ const Contact = () => {
           </span>
         </div>
         <img
-          src="contact-page/1.jpg"
+          src="contact-page/1.png"
           alt="1"
           className="background-photo"
           id="photo1"
         />
         <img
-          src="contact-page/2.jpg"
+          src="contact-page/2.png"
           alt="2"
           className="background-photo"
           id="photo2"
         />
         <img
-          src="contact-page/3.jpg"
+          src="contact-page/3.png"
           alt="3"
           className="background-photo"
           id="photo3"
