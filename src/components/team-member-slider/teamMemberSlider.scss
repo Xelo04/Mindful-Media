@@ -5,13 +5,15 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-inline: 0px;
+  padding-inline: 20px;
   padding-block: 40px;
   width: 80%;
   button {
-    width: 15%;
+    width: 10%;
     background-color: transparent;
     border: none;
+    display: flex;
+    justify-content: center;
     cursor: pointer;
     .material-icons {
       font-size: 130px;
@@ -21,8 +23,15 @@
       }
     }
   }
+  .team-member {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+  }
   .team-member-image {
-    width: 20%;
+    width: 33%;
     height: auto;
     border-radius: 50%;
     border: 2px solid constants.$middle-bg;
@@ -30,8 +39,88 @@
       rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   }
   .team-member-info {
-    width: 40%;
-    padding-left: 5%;
+    width: 50%;
     text-align: justify;
+  }
+
+  @media (max-width: 1200px) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    button {
+      width: 15%;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      .material-icons {
+        font-size: 130px;
+        color: constants.$middle-bg;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+    .team-member {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .team-member-image {
+        width: 50%;
+        height: auto;
+        border-radius: 50%;
+        border: 2px solid constants.$middle-bg;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        margin-bottom: 20px;
+      }
+      .team-member-info {
+        width: 80%;
+        padding-left: 5%;
+        text-align: justify;
+      }
+    }
+  }
+  @media (max-width: 600px) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-inline: 3px;
+
+    button {
+      width: 25%;
+      background-color: transparent;
+      border: none;
+      .material-icons {
+        font-size: 130px;
+        color: constants.$middle-bg;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+    .team-member {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .team-member-image {
+        width: 80%;
+        height: auto;
+        border-radius: 50%;
+        border: 2px solid constants.$middle-bg;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        margin-bottom: 20px;
+      }
+      .team-member-info {
+        width: 80%;
+        padding-left: 5%;
+        text-align: justify;
+        p {
+          display: none;
+        }
+      }
+    }
   }
 }

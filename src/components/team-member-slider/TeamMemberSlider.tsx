@@ -27,16 +27,18 @@ const TeamMemberSlider = () => {
       <button onClick={handlePrev}>
         <span className="material-icons">arrow_left</span>
       </button>
-      <img
-        className="team-member-image"
-        src={teamMembers[currentIndex].image}
-        alt={`${teamMembers[currentIndex].name} ${teamMembers[currentIndex].surname}`}
-      />
-      <div className="team-member-info">
-        <h3>
-          {teamMembers[currentIndex].name} {teamMembers[currentIndex].surname}
-        </h3>
-        <p>{teamMembers[currentIndex].description}</p>
+      <div className="team-member">
+        <img
+          className="team-member-image"
+          src={teamMembers[currentIndex].image}
+          alt={`${teamMembers[currentIndex].name} ${teamMembers[currentIndex].surname}`}
+        />
+        <div className="team-member-info">
+          <h3>
+            {teamMembers[currentIndex].name} {teamMembers[currentIndex].surname}
+          </h3>
+          <p>{teamMembers[currentIndex].description}</p>
+        </div>
       </div>
       <button onClick={handleNext}>
         <span className="material-icons">arrow_right</span>
