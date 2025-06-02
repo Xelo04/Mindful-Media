@@ -41,6 +41,18 @@
         font-size: 1.2em;
       }
     }
+    @media (max-width: 550px) {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 10px;
+      .tab-btn {
+        min-width: 140px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin-inline: 10px;
+      }
+    }
   }
   .tab-content {
     margin-top: 40px;
@@ -141,6 +153,41 @@
         &:hover {
           background: constants.$dark-bg;
         }
+      }
+    }
+    @media (max-width: 900px) {
+      width: 100%;
+      .example {
+        .title {
+          font-size: 1.5rem;
+          margin-top: 20px;
+        }
+        flex-direction: column;
+        .example-images,
+        .example-description {
+          width: 100%;
+        }
+        .example-description {
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+      #speedsisters {
+        display: none;
+      }
+      #you-are-not-alone {
+        flex-direction: column-reverse;
+        .example-images {
+          .example-video {
+            margin-top: 20px;
+          }
+        }
+      }
+      #dr-julie {
+        display: none;
+      }
+      #ash-soto {
+        flex-direction: column-reverse;
       }
     }
   }

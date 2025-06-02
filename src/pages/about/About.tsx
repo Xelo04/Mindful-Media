@@ -33,7 +33,7 @@ const About = () => {
             foster resilience and a greater sense of well-being.
           </p>
           <div className="example">
-            <div className="example-images instagram">
+            <div className="example-images instagram" id="speedsisters">
               <img
                 src="real-life-examples/building-community/ig-title.jpg"
                 alt="ig-title"
@@ -235,7 +235,7 @@ const About = () => {
             to raise awareness, promote self-care, and encourage help-seeking
             behaviors.
           </p>
-          <div className="example">
+          <div className="example" id="you-are-not-alone">
             <div className="example-images">
               <div className="example-video">
                 <iframe
@@ -346,6 +346,7 @@ const About = () => {
                 src="real-life-examples/learning-about-mental-health/application.jpg"
                 alt="ig-description"
                 className="example-image-application"
+                id="dr-julie"
               />
             </div>
             <div className="example-images right instagram">
@@ -390,7 +391,7 @@ const About = () => {
             interests, because it’s easier to reach a bigger audience, which can
             make self-expression feel more meaningful and accepted.
           </p>
-          <div className="example">
+          <div className="example" id="ash-soto">
             <div className="example-images instagram">
               <img
                 src="real-life-examples/self-expression/ig-title.jpg"
