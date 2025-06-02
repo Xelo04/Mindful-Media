@@ -86,6 +86,9 @@
       font-size: 1.8rem;
       font-weight: 600;
     }
+    .title-description {
+      text-align: justify;
+    }
     .example-next {
       margin-top: 70px !important;
     }
@@ -180,7 +183,7 @@
         .example-description {
           padding-left: 0;
           padding-right: 0;
-          text-align: center;
+          text-align: justify;
         }
       }
       #speedsisters {

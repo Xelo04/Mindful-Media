@@ -11,7 +11,7 @@ export const tabs = [
     content: (
       <div className="content-container">
         <span className="title">Building community</span>
-        <p>
+        <p className="title-description">
           Building a community through social media - whether online or in real
           life - can have a powerful, positive impact on mental health. It
           allows people to connect with others who share similar interests,

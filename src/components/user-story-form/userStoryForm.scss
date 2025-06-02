@@ -112,5 +112,22 @@
         border: 3px ridge lightgreen;
       }
     }
+    @media (max-width: 750px) {
+      .submit-btn {
+        background-color: #2ecc40 !important; // green
+        border: 3px solid #27ae60 !important; // darker green border
+        box-shadow: inset 0px 0px 25px #27ae60 !important;
+        color: #fff !important;
+        &::before,
+        &::after {
+          display: none !important;
+          content: none !important;
+        }
+        &:hover {
+          box-shadow: inset 0px 0px 25px #27ae60 !important;
+          border: 3px solid #27ae60 !important;
+        }
+      }
+    }
   }
 }
