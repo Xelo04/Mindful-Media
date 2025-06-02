@@ -54,6 +54,7 @@ const UserStoryForm = () => {
   return (
     <div className="userStoryForm">
       <form ref={formRef} onSubmit={sendEmail}>
+        <h4 style={{ fontWeight: "bold" }}></h4>
         <h4>How much time do you spend on social media on a daily basis?</h4>
         <FormDropdownInput
           name="extraQuestion"

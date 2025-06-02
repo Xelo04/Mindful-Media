@@ -1,5 +1,5 @@
 import PoppingStar from "../../components/popping-star/PoppingStar";
-import TabbedPanel from "../../components/tabbed-content/TabbedPanel";
+import TabbedPanel from "../../components/tabbed-panel/TabbedPanel";
 import TeamMemberSlider from "../../components/team-member-slider/TeamMemberSlider";
 import "./about.scss";
 
