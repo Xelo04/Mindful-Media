@@ -54,7 +54,14 @@
         background-color: constants.$soft-bg;
         border: 2px solid constants.$black-color;
       }
+      @media (max-width: 1200px) {
+        width: 50%;
+      }
+      @media (max-width: 750px) {
+        width: 70%;
+      }
     }
+
     .submit-btn {
       margin-block: 10px;
       width: 10rem;
