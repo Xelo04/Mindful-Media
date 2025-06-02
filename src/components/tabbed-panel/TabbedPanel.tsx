@@ -15,7 +15,7 @@ const TabbedPanel = ({ tabs }: TabbedPanelProps) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div className="tabbed-panel">
+    <div className="tabbed-panel-container">
       <div className="title">
         <span>REAL LIFE EXAMPLES</span>
       </div>
