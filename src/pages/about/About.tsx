@@ -506,7 +506,7 @@ const About = () => {
   ];
   return (
     <div className="about">
-      <section className="title-container">
+      <section className="stars">
         <div className="star" id="star1">
           <PoppingStar width={100} height={100} delayPercent={50} />
         </div>
@@ -570,6 +570,9 @@ const About = () => {
         <div className="star" id="star21">
           <PoppingStar width={40} height={40} delayPercent={30} />
         </div>
+      </section>
+
+      <section className="title-container">
         <div className="title">
           <span className="ballet-font">#Mindful</span>
           <span className="oranienbaum-font">MEDIA</span>
