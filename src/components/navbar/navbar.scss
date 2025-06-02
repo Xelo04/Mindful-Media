@@ -1,6 +1,22 @@
 @use "../../styles/variables.scss" as constants;
 
 nav {
+  .navbar-header {
+    display: none;
+    justify-content: flex-end; // Move hamburger to the right
+    align-items: center;
+    width: 100%;
+    .hamburger {
+      background: transparent;
+      border: none;
+      color: constants.$white-color;
+      cursor: pointer;
+      .material-icons {
+        font-size: 2.3rem;
+        padding-right: 10px;
+      }
+    }
+  }
   background: linear-gradient(
     to bottom,
     constants.$dark-bg,
@@ -79,11 +95,112 @@ nav {
       }
     }
 
-    li {
-      img {
-        width: 36px;
-        height: 36px;
+    //Translate image
+    // li {
+    //   img {
+    //     width: 36px;
+    //     height: 36px;
+    //   }
+    // }
+  }
+
+  @media (max-width: 750px) {
+    .navbar-header {
+      display: flex;
+      z-index: 1100;
+      position: relative;
+      .hamburger {
+        background: transparent;
+        border: none;
+        color: constants.$white-color;
       }
+    }
+    .nav-links {
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100vh;
+      width: 70vw;
+      max-width: 320px;
+      background: constants.$dark-bg;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 60px 30px 0 30px;
+      box-shadow: -2px 0 16px rgba(0, 0, 0, 0.15);
+      transform: translateX(100%);
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      z-index: 1001;
+
+      .links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        li,
+        li.your-story,
+        li.other-link {
+          width: 100%;
+          padding: 14px 0 14px 10px;
+          background: none !important;
+          border: none !important;
+          border-radius: 0 !important;
+          box-shadow: none !important;
+          cursor: pointer;
+          font-size: 1.1rem !important;
+          color: constants.$white-color !important;
+          transition: none !important;
+          transform: none !important;
+
+          span {
+            font-size: 1.1rem !important;
+            border-bottom: 2px solid transparent !important;
+            transition: border-color 0.2s !important;
+            color: constants.$white-color !important;
+          }
+
+          // Remove ALL hover effects
+          &:hover,
+          &.your-story:hover,
+          &.other-link:hover {
+            background: none !important;
+            border: none !important;
+            border-radius: 0 !important;
+            box-shadow: none !important;
+            color: constants.$white-color !important;
+            transform: none !important;
+            span {
+              color: constants.$white-color !important;
+              border-bottom: 2px solid transparent !important;
+            }
+          }
+
+          // Only underline on click/active
+          &:active,
+          &.active {
+            background: none !important;
+            span {
+              border-bottom: 2px solid constants.$soft-bg !important;
+            }
+          }
+          &::after {
+            content: none !important;
+            display: none !important;
+          }
+        }
+      }
+    }
+    .nav-links.open {
+      transform: translateX(0);
+    }
+    .nav-overlay {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 1000;
     }
   }
 }
