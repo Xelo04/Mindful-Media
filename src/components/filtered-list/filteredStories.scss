@@ -27,7 +27,11 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 5px;
         margin-bottom: 15px;
+        @media (max-width: 750px) {
+          grid-template-columns: 1fr 1fr;
+        }
       }
+
       .short-description-title {
         font-weight: bold;
       }
@@ -53,9 +57,11 @@
         max-height: 0;
         opacity: 0;
         overflow: hidden;
-        transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s;
         margin-top: 0;
         pointer-events: none;
+        transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s,
+          margin-top 0.3s;
+
         .title {
           text-align: center;
           padding-bottom: 5px;
@@ -64,10 +70,16 @@
       }
 
       .long-description.open {
-        max-height: 500px;
+        max-height: 800px;
         opacity: 1;
         margin-top: 15px;
         pointer-events: auto;
+      }
+      @media (max-width: 600px) {
+        .long-description.open {
+          max-height: none !important;
+          overflow: visible !important;
+        }
       }
     }
   }

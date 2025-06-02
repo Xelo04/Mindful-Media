@@ -118,14 +118,10 @@ const FilteredStories = ({
                   visibleDescriptions.has(story.id) ? " open" : ""
                 }`}
               >
-                {visibleDescriptions.has(story.id) && (
-                  <>
-                    <div className="title">
-                      <p>Their story</p>
-                    </div>
-                    <p>{story.longDescription}</p>
-                  </>
-                )}
+                <div className="title">
+                  <p>Their story</p>
+                </div>
+                <p>{story.longDescription}</p>
               </div>
               <button onClick={() => toggleDescription(story.id)}>
                 {visibleDescriptions.has(story.id) ? "COLLAPSE" : "READ MORE"}
