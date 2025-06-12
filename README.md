@@ -1,4 +1,3 @@
-aaaaaaaaa
 # Mindful-Media
 
 tools:
