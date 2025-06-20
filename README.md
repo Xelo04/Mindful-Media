@@ -1,4 +1,4 @@
-AAAAAAAAAA# Mindful-Media
+AAAAAAAAAAA# Mindful-Media
 
 tools:
 react select
