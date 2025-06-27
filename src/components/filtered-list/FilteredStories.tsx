@@ -1,3 +1,8 @@
+// The FilteredStories component displays a paginated, filterable list of user-submitted stories.
+// Users can filter stories by demographic fields using the Filters component, and expand/collapse each story's long description.
+// The component manages pagination, filter state, and which stories have their full description visible.
+// It receives selectOptions and storiesData as props, and is styled with SCSS.
+
 import { useState, useMemo } from "react";
 import Filters from "../filters/Filters";
 import "./filteredStories.scss";

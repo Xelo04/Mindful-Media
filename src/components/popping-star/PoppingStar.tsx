@@ -1,3 +1,7 @@
+// The PoppingStar component displays an animated star SVG with a "popping" looping animation.
+// It accepts optional width, height, and delayPercent props to control the star's size and animation delay.
+// The animation is handled via SCSS, and the component is reusable for decorative or animated star effects.
+
 import "./poppingStar.scss";
 
 const ANIMATION_DURATION = 1.5; // sekundy

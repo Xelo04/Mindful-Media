@@ -1,3 +1,7 @@
+// The UserStoryForm component is a user survey form that collects positive experiences with social media and some demographic data.
+// It uses dropdowns and text inputs for various questions, and conditionally shows an email input if the user wants to share more.
+// The form validates required fields, sends the data via EmailJS, and is styled with SCSS.
+
 import "./userStoryForm.scss";
 import FormDropdownInput from "./form-dropdown-input/FormDropdownInput.tsx";
 import { filtersData } from "../../data.ts";
