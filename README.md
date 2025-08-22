@@ -1,4 +1,4 @@
-aaaaaaaaaaa# Mindful Media
+# Mindful Media
 
 **Mindful Media** is a web application that highlights the positive impact of social media on mental health, community support, and self-expression. The project allows users to read real-life stories, explore educational content, and share their own experiences through an interactive and accessible platform.
 
